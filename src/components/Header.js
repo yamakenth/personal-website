@@ -1,12 +1,24 @@
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
+import Scroll from 'react-scroll';
+const scroll = Scroll.animateScroll;
+
 function Header() {
+  // scroll to top of page 
+  function scrollToTop() {
+    scroll.scrollToTop();
+  }
+  
   return (
     <header id='header' className='sticky top-0 bg-white drop-shadow'>
       <nav className='container py-2 flex justify-between items-center'>
         {/* logo */}
-        <h1 className='uppercase text-2xl font-semibold tracking-widest'>Ken Yamada</h1>
+        <h1>
+          <button type='button' className='uppercase text-2xl font-semibold tracking-widest' onClick={scrollToTop}>
+            Ken Yamada
+          </button>  
+        </h1>
 
         {/* nav */}
         <ul className='hidden sm:flex justify-end items-center gap-8 uppercase font-light text-slate-600'>
