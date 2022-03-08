@@ -1,8 +1,5 @@
 import { FaBars } from 'react-icons/fa';
-import { Link } from 'react-scroll';
-
-import Scroll from 'react-scroll';
-const scroll = Scroll.animateScroll;
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Header() {
   // scroll to top of page 
