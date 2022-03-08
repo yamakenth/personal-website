@@ -1,7 +1,9 @@
 function Projects() {
   return (
-    <section id='projects' className='container mt-80'>
-      <h1 className='uppercase'>Projects</h1>
+    <section id='projects'>
+      <div className='container h-96'>
+        <h1 className='uppercase'>Projects</h1>
+      </div>
     </section>
   );
 }
