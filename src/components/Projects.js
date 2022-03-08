@@ -1,6 +1,8 @@
 function Projects() {
   return (
-    <h1 className='uppercase'>Projects</h1>
+    <section id='projects' className='mt-80'>
+      <h1 className='uppercase'>Projects</h1>
+    </section>
   );
 }
 

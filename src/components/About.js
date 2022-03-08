@@ -1,6 +1,8 @@
 function About() {
   return (
-    <h1 className='uppercase'>About</h1>
+    <section id='about'>
+      <h1 className='uppercase'>About</h1>
+    </section>
   );
 }
 

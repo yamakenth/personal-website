@@ -1,6 +1,8 @@
 function Contact() {
   return (
-    <h1 className='uppercase'>Contact</h1>
+    <section id='contact' className='mt-80'>
+      <h1 className='uppercase'>Contact</h1>
+    </section>
   );
 }
 

@@ -6,13 +6,13 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <>
+    <div className='text-slate-900'>
       <Header />
       <About />
       <Skills />
       <Projects />
       <Contact />
-    </>
+    </div>
   );
 }
 
