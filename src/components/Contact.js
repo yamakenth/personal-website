@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section id='contact' className='mt-80'>
+    <section id='contact' className='container my-80'>
       <h1 className='uppercase'>Contact</h1>
     </section>
   );
