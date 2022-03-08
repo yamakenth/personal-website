@@ -106,6 +106,7 @@ function HeaderMobileNav() {
         flex 
         flex-col 
         items-center
+        sm:hidden
         translate-x-full
         ${(showNav) ? 'show-nav' : null}
         ease-linear duration-300
