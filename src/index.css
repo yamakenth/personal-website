@@ -13,3 +13,7 @@
 .navlink:hover {
   --d: 100%;
 }
+
+.show-nav {
+  @apply translate-x-0
+}

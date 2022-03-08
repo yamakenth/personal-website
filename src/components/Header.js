@@ -62,50 +62,62 @@ function Header() {
         <button type='button' className='block sm:hidden' onClick={handleShowNavClick}>
           {(!showNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
         </button>
-        {showNav &&
-          <div className='bg-white text-neutral-600 fixed top-12 right-0 h-screen w-3/5 flex flex-col items-center'> 
-            <ul className='pt-8 flex flex-col items-center gap-8 text-xl uppercase font-light text-neutral-600'>
-              {
-                sections.map(section => {
-                  return (
-                    <li key={section}>
-                      <Link
-                        to={section}
-                        smooth={true}
-                        offset={-50}
-                        className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'
-                      >
-                        {section}
-                      </Link>
-                    </li>
-                  );
-                })
-              }
-            </ul>
-            <ul className='flex justify-between gap-5 pt-14'>
-              <li>
-                <a href={`mailto:${email}`}>
-                  <FaEnvelope size={24} />
-                </a>
-              </li>
-              <li>
-                <a href={linkedin} target='_blank' rel='noreferrer'>
-                  <FaLinkedin size={24} />
-                </a>
-              </li>
-              <li>
-                <a href={github} target='_blank' rel='noreferrer'>
-                  <FaGithubSquare size={24} />
-                </a>
-              </li>
-              <li>
-                <a href={resume} target='_blank' rel='noreferrer'>
-                  <FaFileAlt size={24} />
-                </a>
-              </li>
-            </ul>
-          </div>
-        }
+        <div className={`
+          bg-white 
+          text-neutral-600 
+          absolute 
+          top-12 
+          right-0 
+          h-screen 
+          w-3/5
+          flex 
+          flex-col 
+          items-center
+          translate-x-full
+          ${(showNav) ? 'show-nav' : null}
+          ease-linear duration-300
+          `}> 
+          <ul className='pt-8 flex flex-col items-center gap-8 text-xl uppercase font-light text-neutral-600'>
+            {
+              sections.map(section => {
+                return (
+                  <li key={section}>
+                    <Link
+                      to={section}
+                      smooth={true}
+                      offset={-50}
+                      className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'
+                    >
+                      {section}
+                    </Link>
+                  </li>
+                );
+              })
+            }
+          </ul>
+          <ul className='flex justify-between gap-5 pt-14'>
+            <li>
+              <a href={`mailto:${email}`}>
+                <FaEnvelope size={24} />
+              </a>
+            </li>
+            <li>
+              <a href={linkedin} target='_blank' rel='noreferrer'>
+                <FaLinkedin size={24} />
+              </a>
+            </li>
+            <li>
+              <a href={github} target='_blank' rel='noreferrer'>
+                <FaGithubSquare size={24} />
+              </a>
+            </li>
+            <li>
+              <a href={resume} target='_blank' rel='noreferrer'>
+                <FaFileAlt size={24} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
