@@ -25,7 +25,7 @@ function Header() {
         </h1>
 
         {/* nav */}
-        <ul className='hidden sm:flex justify-end items-center gap-8 uppercase font-light text-slate-600'>
+        <ul className='hidden sm:flex justify-end items-center gap-8 uppercase font-light text-neutral-600'>
           {
             sections.map(section => {
               return (
@@ -45,7 +45,7 @@ function Header() {
         </ul>
 
         {/* mobile nav */}
-        <FaBars className='block sm:hidden' size={24} />
+        <button type='button' className='block sm:hidden'><FaBars size={24} /></button>
       </nav>
     </header>
   );

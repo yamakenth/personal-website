@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className='text-slate-900'>
+    <div className='text-neutral-900 bg-neutral-50'>
       <Header />
       <About />
       <Skills />
