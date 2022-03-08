@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navlink {
+  background: 
+      linear-gradient(currentColor, #0284c7) 
+      bottom /var(--d, 0) 3px 
+      no-repeat;
+  transition:0.5s;
+}
+
+.navlink:hover {
+  --d: 100%;
+}
