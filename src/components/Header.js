@@ -20,22 +20,22 @@ function Header() {
         {/* nav */}
         <ul className='hidden sm:flex justify-end items-center gap-8 uppercase font-light text-slate-600'>
           <li>
-            <Link to='about' spy={true} smooth={true} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
+            <Link to='about' smooth={true} offset={-50} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
               About
             </Link>
           </li>
           <li>
-            <Link to='skills' spy={true} smooth={true} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
+            <Link to='skills' smooth={true} offset={-50} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
               Skills
             </Link>
           </li>
           <li>
-            <Link to='projects' spy={true} smooth={true} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
+            <Link to='projects' smooth={true} offset={-50} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
               Projects
             </Link>
           </li>
           <li>
-            <Link to='contact' spy={true} smooth={true} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
+            <Link to='contact' smooth={true} offset={-50} className='pb-1 px-1 cursor-pointer navlink hover:text-sky-600'>
               Contact
             </Link>
           </li>
