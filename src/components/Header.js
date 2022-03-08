@@ -3,12 +3,10 @@ import { Link } from 'react-scroll';
 
 function Header() {
   return (
-    <header id='header'>
+    <header id='header' className='sticky top-0 bg-white drop-shadow'>
       <nav className='container py-2 flex justify-between items-center'>
         {/* logo */}
-        <h1 className='uppercase text-2xl font-semibold tracking-widest'>
-          <Link to='header' smooth={true} className='cursor-pointer'>Ken Yamada</Link>
-        </h1>
+        <h1 className='uppercase text-2xl font-semibold tracking-widest'>Ken Yamada</h1>
 
         {/* nav */}
         <ul className='hidden sm:flex justify-end items-center gap-12 uppercase font-light text-slate-600'>
