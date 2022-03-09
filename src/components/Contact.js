@@ -38,7 +38,7 @@ function SocialNavLinks() {
   return (
     <ul className='flex flex-col items-center justify-between gap-4 text-xl'>
       <li>
-        <a href={`mailto:${EMAIL}`} className='contact-navitem' {...emailHoverProps}>
+        <a href={`mailto:${EMAIL}`} className='contact-navitem hover:text-sky-600' {...emailHoverProps}>
           <FaEnvelope size={24} />
           {(emailIsHovering) 
             ? <span className='contact-navitem-span'>yamakenth@gmail.com<FaExternalLinkAlt size={14} /></span> 
@@ -47,7 +47,7 @@ function SocialNavLinks() {
         </a>
       </li>
       <li>
-        <a href={LINKEDIN} target='_blank' rel='noreferrer' className='contact-navitem' {...linkedinHoverProps}>
+        <a href={LINKEDIN} target='_blank' rel='noreferrer' className='contact-navitem hover:text-sky-600' {...linkedinHoverProps}>
           <FaLinkedin size={24} />
           {(linkedinIsHovering) 
             ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt size={14} /></span>
@@ -56,7 +56,7 @@ function SocialNavLinks() {
         </a>
       </li>
       <li>
-        <a href={GITHUB} target='_blank' rel='noreferrer' className='contact-navitem' {...githubHoverProps}>
+        <a href={GITHUB} target='_blank' rel='noreferrer' className='contact-navitem hover:text-sky-600' {...githubHoverProps}>
           <FaGithubSquare size={24} />
           {(githubIsHovering) 
             ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt size={14} /></span>
@@ -65,7 +65,7 @@ function SocialNavLinks() {
         </a>
       </li>
       <li>
-        <a href={RESUME} target='_blank' rel='noreferrer' className='contact-navitem' {...resumeHoverProps}>
+        <a href={RESUME} target='_blank' rel='noreferrer' className='contact-navitem hover:text-sky-600' {...resumeHoverProps}>
           <FaFileAlt size={24} />
           {(resumeIsHovering) 
             ? <span className='contact-navitem-span'>Open in new tab<FaExternalLinkAlt size={14} /></span>
