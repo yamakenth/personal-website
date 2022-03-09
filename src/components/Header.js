@@ -26,7 +26,7 @@ function HeaderLogo() {
     <h1>
       <button 
         type='button' 
-        className='uppercase text-4xl font-semibold tracking-widest' 
+        className='font-semibold tracking-widest' 
         onClick={scrollToTop}
       >
         Ken Yamada

@@ -85,7 +85,7 @@ function Contact() {
   return (
     <section id='contact' className='bg-neutral-50'>
       <div className='container py-6 flex flex-col items-center justify-between gap-10'>
-        <h2 className='uppercase text-2xl self-start'>Contact</h2>
+        <h2 className='self-start'>Contact</h2>
         <SocialNavLinks />
         <footer>
           <p className='flex justify-start text-sm mt-5'>Copyright &copy; {curYear}&nbsp;

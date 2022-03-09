@@ -1,8 +1,8 @@
 function About() {
   return (
     <section id='about'>
-      <div className='container h-96'>
-        <h1 className='uppercase'>About</h1>
+      <div className='container py-6 h-96'>
+        <h2>About</h2>
       </div>
     </section>
   );

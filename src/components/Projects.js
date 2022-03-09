@@ -1,8 +1,8 @@
 function Projects() {
   return (
     <section id='projects'>
-      <div className='container h-96'>
-        <h1 className='uppercase'>Projects</h1>
+      <div className='container py-6 h-96'>
+        <h2>Projects</h2>
       </div>
     </section>
   );

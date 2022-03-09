@@ -1,8 +1,8 @@
 function Skills() {
   return (
     <section id='skills' className='bg-neutral-50'>
-      <div className='container h-96'>
-        <h1 className='uppercase'>Skills</h1>
+      <div className='container py-6 h-96'>
+        <h2>Skills</h2>
       </div>
     </section>  
   );
