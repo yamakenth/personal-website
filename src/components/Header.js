@@ -26,7 +26,7 @@ function HeaderLogo() {
     <h1>
       <button 
         type='button' 
-        className='uppercase text-2xl font-semibold tracking-widest' 
+        className='uppercase text-4xl font-semibold tracking-widest' 
         onClick={scrollToTop}
       >
         Ken Yamada
@@ -39,7 +39,7 @@ function HeaderLogo() {
 function HeaderNavLinks(props) {
   return (
     <ul className={`
-      ${(props.isMobile) ? 'pt-8 flex flex-col text-xl' : 'hidden sm:flex justify-end'}
+      ${(props.isMobile) ? 'pt-8 flex flex-col text-xl' : 'hidden md:flex justify-end'}
       items-center 
       gap-8
     `}>
@@ -92,7 +92,7 @@ function HeaderMobileNav() {
 
   return (
     <>
-      <button type='button' className='block sm:hidden' onClick={handleShowNavClick}>
+      <button type='button' className='block md:hidden' onClick={handleShowNavClick}>
         {(!showNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
       </button>
 
@@ -106,7 +106,7 @@ function HeaderMobileNav() {
         flex 
         flex-col 
         items-center
-        sm:hidden
+        md:hidden
         translate-x-full
         ${(showNav) ? 'show-nav' : null}
         ease-linear duration-300
