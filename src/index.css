@@ -38,7 +38,6 @@ h3 {
   @apply text-xl;
 }
 
-/* ADD PROPER CLASS LATER */
-img {
-  @apply w-8
+.skills-icon {
+  @apply w-20
 }
