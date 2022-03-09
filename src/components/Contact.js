@@ -41,7 +41,7 @@ function SocialNavLinks() {
         <a href={`mailto:${EMAIL}`} className='contact-navitem' {...emailHoverProps}>
           <FaEnvelope size={24} />
           {(emailIsHovering) 
-            ? <span className='flex gap-2 items-center'>yamakenth@gmail.com<FaExternalLinkAlt size={14} /></span> 
+            ? <span className='contact-navitem-span'>yamakenth@gmail.com<FaExternalLinkAlt size={14} /></span> 
             : 'Email'
           }
         </a>
@@ -50,7 +50,7 @@ function SocialNavLinks() {
         <a href={LINKEDIN} target='_blank' rel='noreferrer' className='contact-navitem' {...linkedinHoverProps}>
           <FaLinkedin size={24} />
           {(linkedinIsHovering) 
-            ? <span className='flex gap-2 items-center'>yamakenth<FaExternalLinkAlt size={14} /></span>
+            ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt size={14} /></span>
             : 'LinkedIn'
           }
         </a>
@@ -59,7 +59,7 @@ function SocialNavLinks() {
         <a href={GITHUB} target='_blank' rel='noreferrer' className='contact-navitem' {...githubHoverProps}>
           <FaGithubSquare size={24} />
           {(githubIsHovering) 
-            ? <span className='flex gap-2 items-center'>yamakenth<FaExternalLinkAlt size={14} /></span>
+            ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt size={14} /></span>
             : 'GitHub'
           }
         </a>
@@ -68,7 +68,7 @@ function SocialNavLinks() {
         <a href={RESUME} target='_blank' rel='noreferrer' className='contact-navitem' {...resumeHoverProps}>
           <FaFileAlt size={24} />
           {(resumeIsHovering) 
-            ? <span className='flex gap-2 items-center'>Open in new tab<FaExternalLinkAlt size={14} /></span>
+            ? <span className='contact-navitem-span'>Open in new tab<FaExternalLinkAlt size={14} /></span>
             : 'Resume'
           }
         </a>
