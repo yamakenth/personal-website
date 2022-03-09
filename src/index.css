@@ -37,7 +37,3 @@ h2 {
 h3 {
   @apply text-xl;
 }
-
-.skills-icon {
-  @apply w-20
-}

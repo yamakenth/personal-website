@@ -38,15 +38,20 @@ function SkillsSub(props) {
   const skills = props.skills;
 
   return (
-    <>
+    <div className='mt-2 grid gap-4 grid-cols-4 md:grid-cols-6 lg:grid-cols-8'>
       {
         skills.map(skill => {
           return (
-            <p><img className='skills-icon' src={skill.iconSrc} alt={skill.name} />{skill.name}</p>
+            <div className='flex flex-col justify-between items-center'>
+              <div className='h-20 sm:h-24 aspect-square flex justify-center items-center bg-white rounded-md drop-shadow-md p-2'>
+                <img className='object-contain' src={skill.iconSrc} alt={skill.name} />
+              </div>
+              <p>{skill.name}</p>
+            </div>
           );
         })
       }
-    </>
+    </div>
   );
 }
 
