@@ -33,3 +33,7 @@ h1 {
 h2 {
   @apply uppercase text-2xl;
 }
+
+h3 {
+  @apply text-xl;
+}
