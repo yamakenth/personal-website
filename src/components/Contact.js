@@ -38,7 +38,7 @@ function SocialNavLinks() {
   return (
     <ul className='flex flex-col items-center justify-between gap-4 text-xl'>
       <li>
-        <a href={`mailto:${EMAIL}`} className='flex gap-2 items-center hover:underline' {...emailHoverProps}>
+        <a href={`mailto:${EMAIL}`} className='contact-navitem' {...emailHoverProps}>
           <FaEnvelope size={24} />
           {(emailIsHovering) 
             ? <span className='flex gap-2 items-center'>yamakenth@gmail.com<FaExternalLinkAlt size={14} /></span> 
@@ -47,7 +47,7 @@ function SocialNavLinks() {
         </a>
       </li>
       <li>
-        <a href={LINKEDIN} target='_blank' rel='noreferrer' className='flex gap-2 items-center hover:underline' {...linkedinHoverProps}>
+        <a href={LINKEDIN} target='_blank' rel='noreferrer' className='contact-navitem' {...linkedinHoverProps}>
           <FaLinkedin size={24} />
           {(linkedinIsHovering) 
             ? <span className='flex gap-2 items-center'>yamakenth<FaExternalLinkAlt size={14} /></span>
@@ -56,7 +56,7 @@ function SocialNavLinks() {
         </a>
       </li>
       <li>
-        <a href={GITHUB} target='_blank' rel='noreferrer' className='flex gap-2 items-center hover:underline' {...githubHoverProps}>
+        <a href={GITHUB} target='_blank' rel='noreferrer' className='contact-navitem' {...githubHoverProps}>
           <FaGithubSquare size={24} />
           {(githubIsHovering) 
             ? <span className='flex gap-2 items-center'>yamakenth<FaExternalLinkAlt size={14} /></span>
@@ -65,7 +65,7 @@ function SocialNavLinks() {
         </a>
       </li>
       <li>
-        <a href={RESUME} target='_blank' rel='noreferrer' className='flex gap-2 items-center hover:underline' {...resumeHoverProps}>
+        <a href={RESUME} target='_blank' rel='noreferrer' className='contact-navitem' {...resumeHoverProps}>
           <FaFileAlt size={24} />
           {(resumeIsHovering) 
             ? <span className='flex gap-2 items-center'>Open in new tab<FaExternalLinkAlt size={14} /></span>

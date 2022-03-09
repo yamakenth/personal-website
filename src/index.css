@@ -15,5 +15,13 @@
 }
 
 .show-nav {
-  @apply translate-x-0
+  @apply translate-x-0;
+}
+
+.contact-navitem {
+  @apply flex gap-2 items-center hover:underline;
+}
+
+.contact-navitem-span {
+  @apply flex gap-2 items-center;
 }
