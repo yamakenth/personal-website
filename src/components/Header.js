@@ -121,7 +121,7 @@ function HeaderMobileNav() {
 // create header
 function Header() {
   return (
-    <header id='header' className='sticky top-0 bg-white drop-shadow'>
+    <header id='header' className='sticky top-0 bg-white drop-shadow z-50'>
       <nav className='container py-2 flex justify-between items-center'>
         <HeaderLogo />
         <HeaderWebNav />
