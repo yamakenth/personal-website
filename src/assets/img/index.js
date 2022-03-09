@@ -28,7 +28,7 @@ import webpack from './webpack.svg';
 const icons = {
   bootstrap: { name: 'Bootstrap', iconSrc: bootstrap },
   css: { name: 'CSS', iconSrc: css },
-  express: { name: 'Express', iconSrc: express },
+  express: { name: 'Express.js', iconSrc: express },
   firebase: { name: 'Firebase', iconSrc: firebase },
   git: { name: 'Git', iconSrc: git },
   github: { name: 'GitHub', iconSrc: github },
