@@ -24,6 +24,10 @@ import tableau from './icons/tableau.svg';
 import tailwindcss from './icons/tailwindcss.svg';
 import webpack from './icons/webpack.svg';
 
+import gasworks from './about/IMG_2552.jpeg';
+import stevens from './about/IMG_2763.jpeg';
+import sanfrancisco from './about/IMG_5360.jpeg';
+
 // object of icons 
 const icons = {
   bootstrap: { name: 'Bootstrap', iconSrc: bootstrap },
@@ -53,4 +57,11 @@ const icons = {
   webpack: { name: 'Webpack', iconSrc: webpack }
 };
 
-export default icons;
+// object of about section photos 
+const about = {
+  gasworks: { name: 'Ken at Gas Works Park, Seattle', imgSrc: gasworks },
+  stevens: { name: 'Ken at Stevens Pass', imgSrc: stevens },
+  sanfrancisco: { name: 'Ken infront of Golden Gate Bridge, San Francisco', imgSrc: sanfrancisco }
+}
+
+export { icons, about };

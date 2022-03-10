@@ -1,4 +1,4 @@
-import icons from '../assets/img';
+import { icons } from '../assets/img';
 
 // arrays to order skills 
 const languages = [
