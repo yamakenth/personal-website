@@ -74,7 +74,8 @@ function SocialNavLinks() {
 // create web nav 
 function HeaderWebNav() {
   return (
-    <HeaderNavLinks isMobile={false} />
+    // <HeaderNavLinks isMobile={false} />
+    null
   );
 }
 
@@ -87,36 +88,38 @@ function HeaderMobileNav() {
   }
 
   return (
-    <>
-      <button type='button' className='block md:hidden' onClick={handleShowNavClick}>
-        {(!showNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
-      </button>
+    // <>
+    //   <button type='button' className='block md:hidden' onClick={handleShowNavClick}>
+    //     {(!showNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
+    //   </button>
 
-      <div className={`
-        bg-white 
-        absolute 
-        top-12 
-        right-0 
-        h-screen 
-        w-3/5
-        flex 
-        flex-col 
-        items-center
-        md:hidden
-        translate-x-full
-        ${(showNav) ? 'show-nav' : null}
-        ease-linear duration-300
-      `}> 
-        <HeaderNavLinks isMobile={true} />
-        <SocialNavLinks />
-      </div>
-    </>
+    //   <div className={`
+    //     bg-white 
+    //     absolute 
+    //     top-12 
+    //     right-0 
+    //     h-screen 
+    //     w-3/5
+    //     flex 
+    //     flex-col 
+    //     items-center
+    //     md:hidden
+    //     translate-x-full
+    //     ${(showNav) ? 'show-nav' : null}
+    //     ease-linear duration-300
+    //   `}> 
+    //     <HeaderNavLinks isMobile={true} />
+    //     <SocialNavLinks />
+    //   </div>
+    // </>
+    null
   );
 }
 
 // create header
 function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   
   window.addEventListener('scroll', changeNavColor);
 
@@ -126,6 +129,10 @@ function Header() {
     } else {
       setScrolled(false);
     }
+  }
+
+  function handleShowNavClick() {
+    setShowNav(!showNav);
   }
   
   return (
@@ -142,7 +149,10 @@ function Header() {
     >
       <nav className='container py-2 flex justify-between items-center'>
         <HeaderLogo />
-        <div className='hidden'>
+        <div className='lg:hidden'>
+          <button type='button' onClick={handleShowNavClick}>
+            {(!showNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
+          </button>  
           <HeaderMobileNav />
         </div>
         <div className='hidden'>
