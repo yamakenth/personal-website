@@ -24,11 +24,7 @@ function HeaderLogo() {
 
   return (
     <h1>
-      <button 
-        type='button' 
-        className='font-semibold tracking-widest' 
-        onClick={scrollToTop}
-      >
+      <button type='button' className='font-semibold tracking-widest' onClick={scrollToTop}>
         Ken Yamada
       </button>  
     </h1>
@@ -51,7 +47,7 @@ function HeaderNavLinks(props) {
                 to={section}
                 smooth={true} 
                 offset={-50} 
-                className='pb-1 px-1 cursor-pointer navlink text-neutral-600 font-light uppercase hover:text-sky-600'
+                className='pb-1 px-1 cursor-pointer navlink font-light uppercase hover:text-sky-600'
               >
                 {section}
               </Link>
@@ -120,8 +116,23 @@ function HeaderMobileNav() {
 
 // create header
 function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  
+  window.addEventListener('scroll', changeNavColor);
+
+  function changeNavColor() {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }
+  
   return (
-    <header id='header' className='sticky top-0 bg-white drop-shadow z-50'>
+    <header 
+      id='header' 
+      className={`sticky top-0 bg-black/70 z-50 text-neutral-50 ${(scrolled) ? 'active' : null}`}
+    >
       <nav className='container py-2 flex justify-between items-center'>
         <HeaderLogo />
         <HeaderWebNav />
