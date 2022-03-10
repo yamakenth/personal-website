@@ -5,19 +5,31 @@ a software engineering role`;
 function About() {
   
   return (
-    <section id='about' className='h-fit bg-gradient-to-b from-black/70 to-white/40'>
+    <section id='about' className='bg-gradient-to-b from-black/70 to-white/40'>
       <div className='
         container 
         h-72 
-        md:h-screen 
+        md:h-96
+        xl:h-[80vh]
         flex 
         flex-col 
         items-center 
         justify-end
-        md:pb-52
+        xl:justify-center
+        md:pb-40
         md:text-2xl
       '>
-        <p className='text-white text-center p-3 md:w-1/2'>{ABOUT_TEXT}</p>
+        <p className='
+          text-white 
+          text-center 
+          md:text-left 
+          md:mr-40 
+          xl:mr-96
+          p-3 
+          md:w-1/2
+        '>
+          {ABOUT_TEXT}
+        </p>
       </div>
     </section>
   );

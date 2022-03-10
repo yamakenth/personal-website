@@ -46,7 +46,7 @@ function SkillsSub(props) {
               <div className='h-16 sm:h-24 aspect-square flex justify-center items-center bg-white rounded-md drop-shadow-md p-2'>
                 <img className='object-contain' src={skill.iconSrc} alt={skill.name} />
               </div>
-              <p>{skill.name}</p>
+              <p className='text-sm sm:text-base'>{skill.name}</p>
             </div>
           );
         })

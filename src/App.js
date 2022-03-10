@@ -15,9 +15,7 @@ function App() {
         md:bg-[url("./assets/img/about/bg-sakura-md.jpeg")]
         bg-no-repeat 
         bg-fixed 
-        md:bg-center
         bg-contain
-        md:bg-cover
       '
     >
       <Header />
