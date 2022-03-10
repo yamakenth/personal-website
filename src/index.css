@@ -21,26 +21,25 @@ h3 {
   @apply text-xl;
 }
 
-
-
-
-
-
-
-
-
-
 .navlink {
   background: 
     linear-gradient(currentColor, #0284c7) 
     bottom /var(--d, 0) 3px 
     no-repeat;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
 .navlink:hover {
   --d: 100%;
 }
+
+
+
+
+
+
+
+
 
 .contact-navitem {
   @apply 

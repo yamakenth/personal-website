@@ -77,8 +77,7 @@ function SocialNavLinks() {
 // create web nav 
 function HeaderWebNav() {
   return (
-    // <HeaderNavLinks isMobile={false} />
-    null
+    <HeaderNavLinks isMobile={false} />
   );
 }
 
@@ -147,7 +146,7 @@ function Header() {
           <HeaderMobileNav showNav={showMobileNav} />
         </div>
         
-        <div className='hidden'>
+        <div className='hidden lg:block'>
           <HeaderWebNav />
         </div>
       </nav>
