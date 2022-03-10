@@ -86,8 +86,8 @@ function HeaderWebNav() {
 function HeaderMobileNav(props) {
   return (
     <div className={`
-      bg-white 
-      text-neutral-900 
+    bg-white 
+    text-neutral-900 
       absolute 
       top-12 
       md:top-14
