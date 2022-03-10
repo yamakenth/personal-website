@@ -1,8 +1,8 @@
-import About from './components/About';
-import Contact from './components/Contact';
+// import About from './components/About';
+// import Contact from './components/Contact';
 import Header from './components/Header';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+// import Projects from './components/Projects';
+// import Skills from './components/Skills';
 
 function App() {
   return (
@@ -19,8 +19,12 @@ function App() {
         bg-cover
       '
     >
-      {/* <Header />
-      <About />
+      <Header />
+      <div className='h-96 text-white'>ABOUT</div>
+      <div className='h-96 text-white'>SKILLS</div>
+      <div className='h-96 text-white'>PROJECTS</div>
+      <div className='h-96 text-white'>CONTACT</div>
+      {/* <About />
       <Skills />
       <Projects />
       <Contact /> */}

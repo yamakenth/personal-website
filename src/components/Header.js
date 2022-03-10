@@ -23,8 +23,8 @@ function HeaderLogo() {
   }
 
   return (
-    <h1>
-      <button type='button' className='font-semibold tracking-widest' onClick={scrollToTop}>
+    <h1 className='font-semibold tracking-widest text-2xl sm:text-4xl'>
+      <button type='button' onClick={scrollToTop}>
         Ken Yamada
       </button>  
     </h1>
@@ -131,12 +131,23 @@ function Header() {
   return (
     <header 
       id='header' 
-      className={`sticky top-0 bg-black/70 z-50 text-neutral-50 ${(scrolled) ? 'active' : null}`}
+      className={`
+        sticky 
+        top-0 
+        z-50 
+        ${(!scrolled) 
+          ? 'bg-black/70 text-neutral-50 ' 
+          : 'bg-white text-neutral-900 drop-shadow-md'}`
+        }
     >
       <nav className='container py-2 flex justify-between items-center'>
         <HeaderLogo />
-        <HeaderWebNav />
-        <HeaderMobileNav />
+        <div className='hidden'>
+          <HeaderMobileNav />
+        </div>
+        <div className='hidden'>
+          <HeaderWebNav />
+        </div>
       </nav>
     </header>
   );

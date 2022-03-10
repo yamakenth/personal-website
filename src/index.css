@@ -67,10 +67,3 @@ h3 {
     from-black/70 
     to-white/40;
 }
-
-header.active {
-  @apply
-    bg-white
-    text-slate-900
-    drop-shadow-md;
-}
