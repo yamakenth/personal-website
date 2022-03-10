@@ -6,13 +6,24 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    // <div className='text-neutral-900 bg-neutral-50'>
-    <div className='text-neutral-900'>
-      <Header />
+    <div 
+      id='app' 
+      className='
+        text-neutral-900 
+        bg-white
+        bg-[url("./assets/img/about/bg-sakura.jpeg")]
+        md:bg-[url("./assets/img/about/bg-sakura-md.jpeg")]
+        bg-no-repeat 
+        bg-fixed 
+        bg-center
+        bg-cover
+      '
+    >
+      {/* <Header />
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

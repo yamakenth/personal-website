@@ -2,11 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+html, 
+body, 
+#root, 
+#app { 
+  @apply h-full
+}
+
+h1 {
+  @apply uppercase text-4xl;
+}
+
+h2 {
+  @apply uppercase text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+
+
+
+
+
+
+
+
+
 .navlink {
   background: 
-      linear-gradient(currentColor, #0284c7) 
-      bottom /var(--d, 0) 3px 
-      no-repeat;
+    linear-gradient(currentColor, #0284c7) 
+    bottom /var(--d, 0) 3px 
+    no-repeat;
   transition:0.5s;
 }
 
@@ -33,32 +61,16 @@
     items-center;
 }
 
-h1 {
-  @apply 
-    uppercase 
-    text-4xl;
-}
-
-h2 {
-  @apply 
-    uppercase 
-    text-2xl;
-}
-
-h3 {
-  @apply text-xl;
-}
-
-#about {
-  @apply 
-    bg-[url('./assets/img/about/IMG_8050.jpeg')] 
-    bg-center 
-    bg-fixed 
-    bg-no-repeat 
-    bg-cover;
-}
-
 #about-gradient {
   @apply
-  bg-gradient-to-b from-black/70 to-white/40
+    bg-gradient-to-b 
+    from-black/70 
+    to-white/40;
+}
+
+header.active {
+  @apply
+    bg-white
+    text-slate-900
+    drop-shadow-md;
 }
