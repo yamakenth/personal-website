@@ -1,4 +1,4 @@
-// import About from './components/About';
+import About from './components/About';
 // import Contact from './components/Contact';
 import Header from './components/Header';
 // import Projects from './components/Projects';
@@ -15,19 +15,18 @@ function App() {
         md:bg-[url("./assets/img/about/bg-sakura-md.jpeg")]
         bg-no-repeat 
         bg-fixed 
-        bg-center
-        bg-cover
+        md:bg-center
+        bg-contain
+        md:bg-cover
       '
     >
       <Header />
-      <div className='h-96 text-white' id='about'>ABOUT</div>
-      <div className='h-96 text-white' id='skills'>SKILLS</div>
-      <div className='h-96 text-white' id='projects'>PROJECTS</div>
-      <div className='h-96 text-white' id='contact'>CONTACT</div>
-      {/* <About />
+      <About />
+      {/*
       <Skills />
       <Projects />
-      <Contact /> */}
+      <Contact /> 
+      */}
     </div>
   );
 }
