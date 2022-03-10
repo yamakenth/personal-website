@@ -6,7 +6,8 @@ html,
 body, 
 #root, 
 #app { 
-  @apply h-full overflow-x-hidden;
+  @apply h-full 
+  overflow-x-hidden;
 }
 
 h1 {

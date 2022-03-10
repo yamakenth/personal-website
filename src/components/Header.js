@@ -135,14 +135,14 @@ function Header() {
         z-50 
         ${(!scrolled) 
           ? 'bg-black/70 text-neutral-50 ' 
-          : 'bg-white text-neutral-900 drop-shadow-md'}`
-        }
+          : 'bg-white text-neutral-900 drop-shadow-md'}
+      `}
     >
       <nav className='container py-2 flex justify-between items-center'>
         <HeaderLogo />
         
         <div className='lg:hidden'>
-          <button type='button' onClick={handleShowMobileNavClick}>
+          <button type='button' onClick={handleShowMobileNavClick} className='flex justify-center items-center'>
             {(!showMobileNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
           </button>  
           <HeaderMobileNav showNav={showMobileNav} />

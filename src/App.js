@@ -20,10 +20,10 @@ function App() {
       '
     >
       <Header />
-      <div className='h-96 text-white'>ABOUT</div>
-      <div className='h-96 text-white'>SKILLS</div>
-      <div className='h-96 text-white'>PROJECTS</div>
-      <div className='h-96 text-white'>CONTACT</div>
+      <div className='h-96 text-white' id='about'>ABOUT</div>
+      <div className='h-96 text-white' id='skills'>SKILLS</div>
+      <div className='h-96 text-white' id='projects'>PROJECTS</div>
+      <div className='h-96 text-white' id='contact'>CONTACT</div>
       {/* <About />
       <Skills />
       <Projects />
