@@ -59,7 +59,7 @@ function SkillsSub(props) {
 function Skills() {  
   return (
     <section id='skills' className='bg-neutral-50'>
-      <div className='container py-6'>
+      <div className='container py-16'>
         <h2>Skills</h2>
         <div className='mt-5'>
           <h3>Languages</h3>
