@@ -19,21 +19,46 @@
 }
 
 .contact-navitem {
-  @apply flex gap-2 items-center hover:underline;
+  @apply 
+    flex 
+    gap-2 
+    items-center 
+    hover:underline;
 }
 
 .contact-navitem-span {
-  @apply flex gap-2 items-center;
+  @apply 
+    flex 
+    gap-2 
+    items-center;
 }
 
 h1 {
-  @apply uppercase text-4xl;
+  @apply 
+    uppercase 
+    text-4xl;
 }
 
 h2 {
-  @apply uppercase text-2xl;
+  @apply 
+    uppercase 
+    text-2xl;
 }
 
 h3 {
   @apply text-xl;
+}
+
+#about {
+  @apply 
+    bg-[url('./assets/img/about/IMG_8050.jpeg')] 
+    bg-center 
+    bg-fixed 
+    bg-no-repeat 
+    bg-cover;
+}
+
+#about-gradient {
+  @apply
+  bg-gradient-to-b from-black/70 to-white/40
 }
