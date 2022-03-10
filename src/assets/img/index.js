@@ -24,9 +24,11 @@ import tableau from './icons/tableau.svg';
 import tailwindcss from './icons/tailwindcss.svg';
 import webpack from './icons/webpack.svg';
 
+import camping from './about/IMG_9115.jpeg';
 import gasworks from './about/IMG_2552.jpeg';
-import stevens from './about/IMG_2763.jpeg';
+import sakura from './about/IMG_8050.jpeg';
 import sanfrancisco from './about/IMG_5360.jpeg';
+import stevens from './about/IMG_2763.jpeg';
 
 // object of icons 
 const icons = {
@@ -59,9 +61,11 @@ const icons = {
 
 // object of about section photos 
 const about = {
+  camping: { name: 'Ken infront of Wallowa Lake, Oregon', imgSrc: camping },
   gasworks: { name: 'Ken at Gas Works Park, Seattle', imgSrc: gasworks },
-  stevens: { name: 'Ken at Stevens Pass', imgSrc: stevens },
-  sanfrancisco: { name: 'Ken infront of Golden Gate Bridge, San Francisco', imgSrc: sanfrancisco }
+  sakura: { name: 'Ken infront of a Sakura tree', imgSrc: sakura },
+  sanfrancisco: { name: 'Ken infront of Golden Gate Bridge, San Francisco', imgSrc: sanfrancisco },
+  stevens: { name: 'Ken at Stevens Pass', imgSrc: stevens }
 }
 
 export { icons, about };
