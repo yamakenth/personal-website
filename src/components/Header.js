@@ -97,8 +97,7 @@ function HeaderMobileNav(props) {
       md:px-10
       w-fit 
       h-screen
-      translate-x-full
-      ${(props.showNav) ? 'translate-x-0' : null}
+      ${(props.showNav) ? 'translate-x-0' : 'translate-x-full hidden'}
       ease-linear duration-300
     `}>
       <HeaderNavLinks isMobile={true} />
