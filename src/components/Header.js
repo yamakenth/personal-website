@@ -92,10 +92,10 @@ function HeaderMobileNav(props) {
       md:top-14
       right-0 
       px-6
-      pt-16
+      py-12
       md:px-10
       w-fit 
-      h-screen
+      h-fit
       ${(props.showNav) ? 'translate-x-0' : 'translate-x-full hidden'}
       ease-linear duration-300
     `}>
