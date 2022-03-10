@@ -35,7 +35,10 @@ function HeaderLogo() {
 function HeaderNavLinks(props) {
   return (
     <ul className={`
-      ${(props.isMobile) ? 'pt-8 flex flex-col text-xl' : 'hidden md:flex justify-end'}
+      ${(props.isMobile) 
+        ? 'flex flex-col justify-start text-xl' 
+        : 'hidden md:flex justify-end'
+      }
       items-center 
       gap-8
     `}>
@@ -80,48 +83,27 @@ function HeaderWebNav() {
 }
 
 // create mobile nav 
-function HeaderMobileNav() {
+function HeaderMobileNav(props) {
   return (
-    <div className='
+    <div className={`
       bg-white 
       text-neutral-900 
       absolute 
-      top-0 
+      top-12 
+      md:top-14
       right-0 
       px-6
+      pt-16
       md:px-10
       w-fit 
       h-screen
-      flex
-      flex-col
-      items-center
-      justify-start
-    '>
+      translate-x-full
+      ${(props.showNav) ? 'translate-x-0' : null}
+      ease-linear duration-300
+    `}>
       <HeaderNavLinks isMobile={true} />
       <SocialNavLinks />
     </div>
-    
-    // <>
-    //   <div className={`
-    //     done bg-white 
-    //     done absolute 
-    //     done top-12 
-    //     done right-0 
-    //     done h-screen 
-    //     done w-3/5
-    //     done flex 
-    //     done flex-col 
-    //     done items-center
-    //     done md:hidden
-    
-    //     translate-x-full
-    //     ${(showNav) ? 'show-nav' : null}
-    //     ease-linear duration-300
-    //   `}> 
-    //     <HeaderNavLinks isMobile={true} />
-    //     <SocialNavLinks />
-    //   </div>
-    // </>
   );
 }
 
@@ -163,7 +145,7 @@ function Header() {
           <button type='button' onClick={handleShowMobileNavClick}>
             {(!showMobileNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
           </button>  
-          <HeaderMobileNav />
+          <HeaderMobileNav showNav={showMobileNav} />
         </div>
         
         <div className='hidden'>

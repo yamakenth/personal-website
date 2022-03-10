@@ -6,7 +6,7 @@ html,
 body, 
 #root, 
 #app { 
-  @apply h-full
+  @apply h-full overflow-x-hidden;
 }
 
 h1 {
@@ -40,10 +40,6 @@ h3 {
 
 .navlink:hover {
   --d: 100%;
-}
-
-.show-nav {
-  @apply translate-x-0;
 }
 
 .contact-navitem {
