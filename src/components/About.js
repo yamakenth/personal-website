@@ -1,4 +1,4 @@
-import illustration from '../assets/img/about/programming-illustration.svg';
+import { FaCode } from 'react-icons/fa';
 
 // CHANGE LATER
 const ABOUT_TEXT = `I'm currently an undergraduate looking to improve my software and web 
@@ -13,13 +13,11 @@ function About() {
     <section id='about' className='bg-neutral-50'>
       <div className='container py-16'>
         <h2 className='uppercase'>About</h2>
-        <div className='mt-5 flex items-center justify-center gap-24 px-12'>
-          <div>
+        <div className='mt-5 flex items-center justify-center gap-12 px-12'>
+          <div className='w-1/2'>
             <p>{ABOUT_TEXT}</p>
           </div>
-          <div>
-            <img src={illustration} alt='' width='1600' />
-          </div>
+          <FaCode size={180} />
         </div>
       </div>
     </section>
