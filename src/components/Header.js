@@ -23,7 +23,7 @@ function HeaderLogo() {
   }
 
   return (
-    <h1 className='font-semibold tracking-widest text-2xl sm:text-4xl'>
+    <h1 className='font-semibold tracking-widest'>
       <button type='button' onClick={scrollToTop}>
         Ken Yamada
       </button>  
