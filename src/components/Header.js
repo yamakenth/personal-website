@@ -134,7 +134,7 @@ function Header() {
         top-0 
         z-50 
         ${(!scrolled) 
-          ? 'bg-neutral-900/70 text-neutral-50 ' 
+          ? 'bg-black/70 text-neutral-50 ' 
           : 'bg-neutral-50 text-neutral-900 drop-shadow-md'}
       `}
     >

@@ -4,7 +4,7 @@ const INTRO_TEXT = 'Hello! My name is Ken and I\'m a self-taught full-stack web 
 
 function Home() {
   return (
-    <section id='home' className='bg-gradient-to-b from-neutral-900/70 to-neutral-50/40'>
+    <section id='home' className='bg-gradient-to-b from-black/70 via-black/20 to-white/40'>
       <div className='
         container
         h-72
