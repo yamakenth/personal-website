@@ -83,7 +83,7 @@ function Contact() {
   const curYear = new Date().getFullYear();
 
   return (
-    <section id='contact' className='bg-neutral-50'>
+    <section id='contact' className='bg-neutral-100'>
       <div className='container py-6 flex flex-col items-center justify-between gap-10'>
         <h2 className='self-start'>Contact</h2>
         <SocialNavLinks />

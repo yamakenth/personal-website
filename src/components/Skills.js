@@ -43,7 +43,7 @@ function SkillsSub(props) {
         skills.map(skill => {
           return (
             <div key={skill.name} className='flex flex-col justify-between items-center gap-2'>
-              <div className='h-16 sm:h-24 aspect-square flex justify-center items-center bg-neutral-50 rounded-md drop-shadow-md p-2'>
+              <div className='h-16 sm:h-24 aspect-square flex justify-center items-center bg-white rounded-md drop-shadow-md p-2'>
                 <img className='object-contain' src={skill.iconSrc} alt={skill.name} />
               </div>
               <p className='text-sm sm:text-base'>{skill.name}</p>
@@ -58,7 +58,7 @@ function SkillsSub(props) {
 // create skills section
 function Skills() {  
   return (
-    <section id='skills' className='bg-neutral-50'>
+    <section id='skills' className='bg-neutral-100'>
       <div className='container py-16'>
         <h2>Skills</h2>
         <div className='mt-5'>
