@@ -88,8 +88,7 @@ function HeaderMobileNav(props) {
     bg-white 
     text-neutral-900 
       absolute 
-      top-12 
-      md:top-14
+      top-0
       right-0 
       px-6
       py-12
@@ -99,6 +98,9 @@ function HeaderMobileNav(props) {
       ${(props.showNav) ? 'translate-x-0' : 'translate-x-full hidden'}
       ease-linear duration-300
     `}>
+      <button type='button' className='absolute top-2 right-40 md:right-48' onClick={props.handleShowNav}>
+        <FaTimes size={24} />
+      </button>
       <HeaderNavLinks isMobile={true} />
       <SocialNavLinks />
     </div>
@@ -141,9 +143,9 @@ function Header() {
         
         <div className='lg:hidden'>
           <button type='button' onClick={handleShowMobileNavClick} className='flex justify-center items-center'>
-            {(!showMobileNav) ? <FaBars size={24} /> : <FaTimes size={24} />}
-          </button>  
-          <HeaderMobileNav showNav={showMobileNav} />
+            <FaBars size={24} />
+          </button>
+          <HeaderMobileNav showNav={showMobileNav} handleShowNav={handleShowMobileNavClick} />
         </div>
         
         <div className='hidden lg:block'>
