@@ -8,7 +8,10 @@ module.exports = {
     extend: {},
     container: {
       center: true,
-      padding: "1rem"
+      padding: {
+        DEFAULT: "1rem",
+        md: "4rem"
+      }
     },
     screens: {
       "xxs": "375px",

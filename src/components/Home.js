@@ -33,7 +33,7 @@ function Home() {
           border-solid 
           rounded-2xl 
           border-neutral-50/50
-          md:ml-24
+          md:ml-20
           lg:ml-38
           xl:ml-56
           md:mb-6
