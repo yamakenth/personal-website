@@ -89,9 +89,9 @@ function Contact() {
         <SocialNavLinks />
         <footer>
           <p className='flex justify-start text-sm mt-5'>Copyright &copy; {curYear}&nbsp;
-            <a href={SOURCE_CODE} target='_blank' rel='noreferrer' className='flex gap-1 items-center'>
-              yamakenth 
-              <FaGithub size={18} />
+            yamakenth
+            <a href={SOURCE_CODE} target='_blank' rel='noreferrer' className='flex gap-1 items-center ml-2'>
+               <FaGithub size={18} />
             </a>
           </p>
         </footer>

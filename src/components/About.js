@@ -13,7 +13,7 @@ function About() {
       <div className='container py-16'>
         <h2 className='uppercase'>About</h2>
         <div className='mt-5 flex items-center justify-center gap-12 px-4'>
-          <p className='text-justify md:w-1/2 lg:w-7/12'>{ABOUT_TEXT}</p>
+          <h4 className='text-justify md:w-1/2 lg:w-7/12'>{ABOUT_TEXT}</h4>
           <FaCode size={180} className='hidden md:block' />
         </div>
       </div>
