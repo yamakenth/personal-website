@@ -10,7 +10,7 @@ import {
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 // class constants 
-const SECTIONS = ['about', 'skills', 'projects', 'contact'];
+const SECTIONS = ['home', 'about', 'skills', 'projects', 'contact'];
 const EMAIL ='yamakenth@gmail.com';
 const LINKEDIN ='https://www.linkedin.com/in/yamakenth/';
 const GITHUB='https://github.com/yamakenth';
