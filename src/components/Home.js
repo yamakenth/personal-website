@@ -39,7 +39,7 @@ function Home() {
           md:mb-6
           lg:-mb-6
         '>
-          <p className='
+          <h4 className='
             text-neutral-50 
             text-center
             w-72
@@ -48,7 +48,7 @@ function Home() {
             xl:text-3xl
           '>
             {INTRO_TEXT}
-          </p>
+          </h4>
           <div>
             <Link to='skills' smooth={true} offset={-50} type='button' className='btn btn-primary'>Skills</Link>
             <Link to='projects' smooth={true} offset={-50} type='button' className='btn btn-secondary'>Projects</Link> 

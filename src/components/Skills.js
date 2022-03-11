@@ -61,15 +61,15 @@ function Skills() {
     <section id='skills' className='bg-neutral-100'>
       <div className='container py-16'>
         <h2>Skills</h2>
-        <div className='mt-5'>
+        <div className='mt-5 px-2 md:px-6'>
           <h3>Languages</h3>
           <SkillsSub skills={languages}/>
         </div>
-        <div className='mt-5'>
+        <div className='mt-5 px-2 md:px-6'>
           <h3>Frameworks/Libraries/Databases</h3>
           <SkillsSub skills={frameworks}/>
         </div>
-        <div className='mt-5'>
+        <div className='mt-5 px-2 md:px-6'>
           <h3>Miscellaneous</h3>
           <SkillsSub skills={misc}/>
         </div>
