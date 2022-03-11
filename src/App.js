@@ -11,7 +11,7 @@ function App() {
       id='app' 
       className='
         text-neutral-900 
-        bg-white
+        bg-neutral-50
         bg-[url("./assets/img/about/bg-sakura.jpeg")]
         md:bg-[url("./assets/img/about/bg-sakura-md.jpeg")]
         bg-no-repeat 

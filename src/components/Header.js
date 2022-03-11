@@ -85,7 +85,7 @@ function HeaderWebNav() {
 function HeaderMobileNav(props) {
   return (
     <div className={`
-    bg-white 
+    bg-neutral-50 
     text-neutral-900 
       absolute 
       top-12 
@@ -132,8 +132,8 @@ function Header() {
         top-0 
         z-50 
         ${(!scrolled) 
-          ? 'bg-black/70 text-neutral-50 ' 
-          : 'bg-white text-neutral-900 drop-shadow-md'}
+          ? 'bg-neutral-900/70 text-neutral-50 ' 
+          : 'bg-neutral-50 text-neutral-900 drop-shadow-md'}
       `}
     >
       <nav className='container py-2 flex justify-between items-center'>
