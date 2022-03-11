@@ -85,7 +85,7 @@ function HeaderWebNav() {
 function HeaderMobileNav(props) {
   return (
     <div className={`
-    bg-neutral-50 
+    bg-white 
     text-neutral-900 
       absolute 
       top-12 
@@ -95,7 +95,7 @@ function HeaderMobileNav(props) {
       py-12
       md:px-10
       w-fit 
-      h-fit
+      h-screen
       ${(props.showNav) ? 'translate-x-0' : 'translate-x-full hidden'}
       ease-linear duration-300
     `}>
