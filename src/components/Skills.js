@@ -3,12 +3,12 @@ import icons from '../assets/img';
 // arrays to order skills 
 const languages = [
   icons.javascript,
-  icons.python,
-  icons.mysql,
   icons.html,
   icons.css,
-  icons.java,
-  icons.r
+  icons.python,
+  icons.r,
+  icons.mysql,
+  icons.java
 ];
 const frameworks = [
   icons.react,
@@ -17,9 +17,9 @@ const frameworks = [
   icons.passportjs,
   icons.mongodb,
   icons.mongoose,
+  icons.pug,
   icons.bootstrap,
-  icons.tailwindcss,
-  icons.pug
+  icons.tailwindcss
 ];
 const misc = [
   icons.git,
