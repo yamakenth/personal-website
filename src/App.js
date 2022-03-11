@@ -13,10 +13,11 @@ function App() {
         text-neutral-900 
         bg-neutral-50
         bg-[url("./assets/img/about/bg-sakura.jpeg")]
-        md:bg-[url("./assets/img/about/bg-sakura-md.jpeg")]
+        sm:bg-[url("./assets/img/about/bg-sakura-md.jpeg")]
         bg-no-repeat 
         bg-fixed 
         bg-contain
+        1.5xl:bg-cover
       '
     >
       <Header />

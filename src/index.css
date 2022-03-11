@@ -27,7 +27,7 @@ h3 {
 }
 
 .btn {
-  @apply bg-neutral-50 text-neutral-900 rounded-lg py-1 px-6 mx-1;
+  @apply bg-neutral-50 text-neutral-900 rounded-lg py-1 px-6 mx-1 cursor-pointer;
 }
 
 .btn-primary {
