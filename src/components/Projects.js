@@ -48,10 +48,14 @@ function Projects() {
             </div>
           </div>
 
-          <div className='flex items-center justify-center gap-1 p-3 mt-6'>
+          <div className='flex items-center justify-center gap-3 p-3 mt-6'>
             {
               [...Array(6)].map((e, i) => {
-                return <FaCircle key={i} className='text-[0.5rem] text-neutral-500' />;
+                return (
+                  <button type='button'>
+                    <FaCircle key={i} className='text-[0.5rem] text-neutral-500 hover:text-neutral-400 hover:scale-125' />
+                  </button>
+                )
               })
             }
           </div>
