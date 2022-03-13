@@ -53,7 +53,7 @@ function Home() {
           </h4>
           <div className='flex justify-center items-center gap-2'>
             <a href={RESUME} target='_blank' rel='noreferrer' className='btn btn-primary'>
-                Resume&nbsp;&nbsp;<FaExternalLinkAlt size={16} />
+              Resume&nbsp;&nbsp;<FaExternalLinkAlt size={16} />
             </a>
             <Link to='projects' smooth={true} offset={-50} className='btn btn-secondary'>Projects</Link> 
           </div>
