@@ -14,7 +14,17 @@ function Projects() {
           drop-shadow-md 
           p-6 
         '>
-          
+          <div className='group hover:bg-neutral-900/40 absolute top-0 left-0 h-full rounded-l-xl flex flex-col items-center justify-center'>
+            <button type='button'>
+              <FaCaretLeft className='text-5xl text-neutral-500/60 group-hover:text-neutral-50/80' />
+            </button>
+          </div>
+          <div className='group hover:bg-neutral-900/40 absolute top-0 right-0 h-full rounded-r-xl flex flex-col items-center justify-center'>
+            <button type='button'>
+              <FaCaretRight className='text-5xl text-neutral-500/60 group-hover:text-neutral-50/80' />
+            </button>
+          </div>
+
           <div className='flex flex-col lg:flex-row justify-center items-center gap-6'>
             <img src={blogApi} alt='' className='w-full lg:w-3/5 2xl:w-1/2 h-fit rounded-lg'/>
             
