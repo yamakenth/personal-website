@@ -1,6 +1,8 @@
 import { Link } from 'react-scroll';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const INTRO_TEXT = 'Hello! My name is Ken and I\'m a self-taught full-stack web developer.';
+const RESUME ='https://drive.google.com/file/d/1bMAp7i-5VW5fCvf2T5T6E-TcE9nu7z17/view?usp=sharing';
 
 function Home() {
   return (
@@ -49,9 +51,11 @@ function Home() {
           '>
             {INTRO_TEXT}
           </h4>
-          <div>
-            <Link to='skills' smooth={true} offset={-50} type='button' className='btn btn-primary'>Skills</Link>
-            <Link to='projects' smooth={true} offset={-50} type='button' className='btn btn-secondary'>Projects</Link> 
+          <div className='flex justify-center items-center gap-2'>
+            <a href={RESUME} target='_blank' rel='noreferrer' className='btn btn-primary'>
+                Resume&nbsp;&nbsp;<FaExternalLinkAlt size={16} />
+            </a>
+            <Link to='projects' smooth={true} offset={-50} className='btn btn-secondary'>Projects</Link> 
           </div>
         </div>
       </div>
