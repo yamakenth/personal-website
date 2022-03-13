@@ -7,10 +7,11 @@ import {
   FaGithubSquare, 
   FaFileAlt 
 } from 'react-icons/fa';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
+
+import HeaderNavLinks from './Header.NavLinks';
 
 // class constants 
-const SECTIONS = ['home', 'about', 'skills', 'projects', 'contact'];
 const EMAIL ='yamakenth@gmail.com';
 const LINKEDIN ='https://www.linkedin.com/in/yamakenth/';
 const GITHUB='https://github.com/yamakenth';
@@ -31,37 +32,6 @@ function HeaderLogo() {
   );
 }
 
-// create nav ul 
-function HeaderNavLinks(props) {
-  return (
-    <ul className={`
-      ${(props.isMobile) 
-        ? 'flex flex-col justify-start text-xl' 
-        : 'hidden md:flex justify-end'
-      }
-      items-center 
-      gap-8
-    `}>
-      {
-        SECTIONS.map(section => {
-          return (
-            <li key={section}>
-              <Link 
-                to={section}
-                smooth={true} 
-                offset={-50} 
-                className='pb-1 px-1 cursor-pointer navlink font-light uppercase hover:text-sky-600'
-              >
-                {section}
-              </Link>
-            </li>               
-          );
-        })
-      }
-    </ul>
-  );
-}
-
 // create social nav ul
 function SocialNavLinks() {
   return (
@@ -71,13 +41,6 @@ function SocialNavLinks() {
       <li><a href={GITHUB} target='_blank' rel='noreferrer'><FaGithubSquare size={24} /></a></li>
       <li><a href={RESUME} target='_blank' rel='noreferrer'><FaFileAlt size={24} /></a></li>
     </ul>
-  );
-}
-
-// create web nav 
-function HeaderWebNav() {
-  return (
-    <HeaderNavLinks isMobile={false} />
   );
 }
 
@@ -149,7 +112,8 @@ function Header() {
         </div>
         
         <div className='hidden lg:block'>
-          <HeaderWebNav />
+          {/* <HeaderWebNav /> */}
+          <HeaderNavLinks isMobile={false} />
         </div>
       </nav>
     </header>
