@@ -1,4 +1,4 @@
-import blogApi from '../assets/img/projects/blog-api.png';
+import blogApi from '../assets/img/projects/blog-api.gif';
 import { FaGithub, FaEye, FaCaretLeft, FaCaretRight, FaCircle } from 'react-icons/fa';
 
 function Projects() {
@@ -52,8 +52,8 @@ function Projects() {
             {
               [...Array(6)].map((e, i) => {
                 return (
-                  <button type='button'>
-                    <FaCircle key={i} className='text-[0.5rem] text-neutral-500 hover:text-neutral-400 hover:scale-125' />
+                  <button type='button' key={i}>
+                    <FaCircle className='text-[0.5rem] text-neutral-500 hover:text-neutral-400 hover:scale-125' />
                   </button>
                 )
               })
