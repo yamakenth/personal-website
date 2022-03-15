@@ -60,7 +60,13 @@ function DotNav(props) {
         [...Array(projects.length)].map((e, i) => {
           return (
             <button type='button' key={i}>
-              <FaCircle className='text-[0.5rem] text-neutral-500 hover:text-neutral-400 hover:scale-125' />
+              <FaCircle className={`
+                text-[0.5rem] 
+                text-neutral-500 
+                hover:text-neutral-400 
+                hover:scale-125
+                ${(i === props.curSlide) ? 'text-neutral-400 scale-125' : null}
+              `} />
             </button>
           )
         })
@@ -107,7 +113,7 @@ function Projects() {
           {/* Project details */}
           <Details curSlide={curSlide} />
           {/* Carousel Nav */}
-          <DotNav />
+          <DotNav curSlide={curSlide} />
         </div>
       </div>
     </section>
