@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.8762115a.css",
-    "main.js": "/personal-website/static/js/main.3cd1386d.js",
+    "main.css": "/personal-website/static/css/main.bc12e02d.css",
+    "main.js": "/personal-website/static/js/main.468bc902.js",
     "static/media/tnwhomepageclone-screencapture.gif": "/personal-website/static/media/tnwhomepageclone-screencapture.cd6e2a74ab1fd46dd6d1.gif",
     "static/media/bg-sakura-md.jpeg": "/personal-website/static/media/bg-sakura-md.9c0390acf553bcce001c.jpeg",
     "static/media/bg-sakura.jpeg": "/personal-website/static/media/bg-sakura.24a18912a96903bcf358.jpeg",
@@ -35,11 +35,11 @@
     "static/media/heroku.svg": "/personal-website/static/media/heroku.3f1cc0c4584482604a5fbcaf3d2fb7a5.svg",
     "static/media/firebase.svg": "/personal-website/static/media/firebase.0d5ec3e60614ea8e4d7abbf0729e969b.svg",
     "static/media/npm.svg": "/personal-website/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.8762115a.css.map": "/personal-website/static/css/main.8762115a.css.map",
-    "main.3cd1386d.js.map": "/personal-website/static/js/main.3cd1386d.js.map"
+    "main.bc12e02d.css.map": "/personal-website/static/css/main.bc12e02d.css.map",
+    "main.468bc902.js.map": "/personal-website/static/js/main.468bc902.js.map"
   },
   "entrypoints": [
-    "static/css/main.8762115a.css",
-    "static/js/main.3cd1386d.js"
+    "static/css/main.bc12e02d.css",
+    "static/js/main.468bc902.js"
   ]
 }
