@@ -54,12 +54,16 @@ function Details(props) {
 
 // carousel dot nav
 function DotNav(props) {
+  function setSlide(e, i) {
+    props.setCurSlide(i);
+  }
+  
   return (
     <div className='flex items-center justify-center gap-3 p-3'>
       {
         [...Array(projects.length)].map((e, i) => {
           return (
-            <button type='button' key={i}>
+            <button type='button' key={i} onClick={e => setSlide(e, i)}>
               <FaCircle className={`
                 text-[0.5rem] 
                 text-neutral-500 
@@ -113,7 +117,7 @@ function Projects() {
           {/* Project details */}
           <Details curSlide={curSlide} />
           {/* Carousel Nav */}
-          <DotNav curSlide={curSlide} />
+          <DotNav curSlide={curSlide} setCurSlide={setCurSlide} />
         </div>
       </div>
     </section>
