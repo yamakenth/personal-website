@@ -1,31 +1,18 @@
 import { Link } from 'react-scroll';
 
-const SECTIONS = ['home', 'about', 'skills', 'projects', 'contact'];
+const section = ['home', 'about', 'skills', 'projects', 'contact'];
 
-// create nav ul 
-function HeaderNavLinks(props) {
+const NavLinks = (props) => {
   return (
-    <ul className={`
-      ${(props.isMobile) 
-        ? 'flex flex-col justify-start text-xl' 
-        : 'hidden md:flex justify-end'
-      }
-      items-center 
-      gap-8
-    `}>
+    <ul className={`flex justify-end items-center gap-8 ${(props.isMobile) ? 'flex-col py-6' : null}`}>
       {
-        SECTIONS.map(section => {
+        section.map(section => {
           return (
             <li key={section}>
-              <Link 
-                to={section}
-                smooth={true} 
-                offset={-50} 
-                className='pb-1 px-1 cursor-pointer navlink font-light uppercase hover:text-sky-600'
-              >
+              <Link to={section} smooth={true} offset={-50} className='pb-1 px-1 font-light uppercase cursor-pointer navlink-effect hover:text-sky-600'>
                 {section}
               </Link>
-            </li>               
+            </li>
           );
         })
       }
@@ -33,4 +20,4 @@ function HeaderNavLinks(props) {
   );
 }
 
-export default HeaderNavLinks;
+export default NavLinks;

@@ -19,7 +19,7 @@ a {
   @apply text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 
-.navlink {
+.navlink-effect {
   background: 
     linear-gradient(currentColor, #0284c7) 
     bottom /var(--d, 0) 3px 
@@ -27,7 +27,7 @@ a {
   transition: 0.5s;
 }
 
-.navlink:hover {
+.navlink-effect:hover {
   --d: 100%;
 }
 

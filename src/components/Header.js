@@ -26,7 +26,9 @@ const Header = () => {
         </button>
         
         {/* mainnav */}
-        <NavLinks isMobile={false} className='hidden md:block' />
+        <div className='hidden md:block'>
+          <NavLinks isMobile={false} />
+        </div>
         {/* menu/hamburger button */}
         <button type='button' onClick={handleMenuButtonClick} className='md:hidden flex justify-center items-center'>
           <FaBars className='text-2xl' />
