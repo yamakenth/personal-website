@@ -7,14 +7,14 @@ import projects from '../project-data';
 function Control(props) {
   return (
     <>
-      <div className='group hover:bg-neutral-900/40 absolute top-0 left-0 h-full rounded-l-xl flex flex-col items-center justify-center'>
+      <div className='group lg:hover:bg-neutral-900/40 absolute top-0 left-0 h-full rounded-l-xl flex flex-col items-center justify-center'>
         <button type='button' onClick={props.getPrevSlide}>
-          <FaCaretLeft className='text-5xl text-neutral-500/60 group-hover:text-neutral-50/80' />
+          <FaCaretLeft className='text-5xl text-neutral-500/60 lg:group-hover:text-neutral-50/80' />
         </button>
       </div>
-      <div className='group hover:bg-neutral-900/40 absolute top-0 right-0 h-full rounded-r-xl flex flex-col items-center justify-center'>
+      <div className='group lg:hover:bg-neutral-900/40 absolute top-0 right-0 h-full rounded-r-xl flex flex-col items-center justify-center'>
         <button type='button' onClick={props.getNextSlide}>
-          <FaCaretRight className='text-5xl text-neutral-500/60 group-hover:text-neutral-50/80' />
+          <FaCaretRight className='text-5xl text-neutral-500/60 lg:group-hover:text-neutral-50/80' />
         </button>
       </div>
     </>
@@ -111,6 +111,7 @@ function Projects() {
           xl:h-[34rem]
           2xl:h-[36rem]
           w-full
+          relative
         '>
           {/* Carousel control */}
           <Control getNextSlide={getNextSlide} getPrevSlide={getPrevSlide} />
