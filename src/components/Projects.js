@@ -25,6 +25,12 @@ function Projects() {
           rounded-xl 
           drop-shadow-md 
           p-6 
+          h-[50rem]
+          xs:h-[47rem]
+          sm:h-[51rem]
+          md:h-[57rem]
+          lg:h-[30rem]
+          xl:h-[34rem]
         '>
           {/* Carousel control */}
           <div className='group hover:bg-neutral-900/40 absolute top-0 left-0 h-full rounded-l-xl flex flex-col items-center justify-center'>
