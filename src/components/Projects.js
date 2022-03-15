@@ -25,12 +25,15 @@ function Projects() {
           rounded-xl 
           drop-shadow-md 
           p-6 
+          flex
+          flex-col
+          justify-between
           h-[50rem]
-          xs:h-[47rem]
-          sm:h-[51rem]
-          md:h-[57rem]
-          lg:h-[30rem]
+          md:h-[58rem]
+          lg:h-[32rem]
           xl:h-[34rem]
+          2xl:h-[36rem]
+          w-full
         '>
           {/* Carousel control */}
           <div className='group hover:bg-neutral-900/40 absolute top-0 left-0 h-full rounded-l-xl flex flex-col items-center justify-center'>
@@ -45,18 +48,20 @@ function Projects() {
           </div>
           {/* Project details */}
           <div className='flex flex-col lg:flex-row justify-center items-center gap-6'>
-            <img src={projects[curSlide].demoGif} alt='' className='w-full lg:w-3/5 2xl:w-1/2 h-fit rounded-lg'/>
-            <div>
-              <h3 className='underline font-bold mb-2'>{projects[curSlide].name}</h3>
-              <p className='mb-1'>
-                <span className='font-bold'>Summary:&nbsp;</span>{projects[curSlide].summary}
-              </p>
-              <p className='mb-1'>
-                <span className='font-bold'>Features:&nbsp;</span>{projects[curSlide].features}
-              </p>
-              <p className='mb-1'>
-                <span className='font-bold'>Technologies Used:&nbsp;</span>{projects[curSlide].technologies}
-              </p>
+            <img src={projects[curSlide].demoGif} alt='' className='w-full lg:w-3/5 2xl:w-1/2 rounded-lg'/>
+            <div className='h-full flex flex-col justify-between'>
+              <div>
+                <h3 className='underline font-bold mb-2'>{projects[curSlide].name}</h3>
+                <p className='mb-1'>
+                  <span className='font-bold'>Summary:&nbsp;</span>{projects[curSlide].summary}
+                </p>
+                <p className='mb-1'>
+                  <span className='font-bold'>Features:&nbsp;</span>{projects[curSlide].features}
+                </p>
+                <p className='mb-1'>
+                  <span className='font-bold'>Technologies Used:&nbsp;</span>{projects[curSlide].technologies}
+                </p>
+              </div>
               <div className='flex justify-center items-center gap-2 mt-8'>
                 <a href={projects[curSlide].demoLink} target='_blank' rel='noreferrer' className='btn btn-secondary'>
                   <FaEye />&nbsp;Demo
@@ -68,7 +73,7 @@ function Projects() {
             </div>
           </div>
           {/* Carousel Nav */}
-          <div className='flex items-center justify-center gap-3 p-3 mt-6'>
+          <div className='flex items-center justify-center gap-3 p-3'>
             {
               [...Array(projects.length)].map((e, i) => {
                 return (
