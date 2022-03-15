@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaGithub, FaEye, FaCaretLeft, FaCaretRight, FaCircle } from 'react-icons/fa';
 
-import projects from '../project-data';
+import projects from '../data/projects';
 
 // left and right arrow for carousel
 function Control(props) {

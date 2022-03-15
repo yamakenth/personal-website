@@ -1,8 +1,8 @@
-import blogApiDemo from './assets/img/projects/blogapi-screencapture.gif';
-import calculatorDemo from './assets/img/projects/calculator-screencapture.gif';
-import ShoppingCartDemo from './assets/img/projects/shoppingcart-screencapture.gif';
-import TnwHomepageCloneDemo from './assets/img/projects/tnwhomepageclone-screencapture.gif';
-import WeatherAppDemo from './assets/img/projects/weatherapp-screencapture.gif';
+import blogApiDemo from '../assets/img/projects/blogapi-screencapture.gif';
+import calculatorDemo from '../assets/img/projects/calculator-screencapture.gif';
+import ShoppingCartDemo from '../assets/img/projects/shoppingcart-screencapture.gif';
+import TnwHomepageCloneDemo from '../assets/img/projects/tnwhomepageclone-screencapture.gif';
+import WeatherAppDemo from '../assets/img/projects/weatherapp-screencapture.gif';
 
 const blogApi = {
   name: 'Blog API',
