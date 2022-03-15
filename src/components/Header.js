@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 
-import HeaderNavLinks from './Header.NavLinks';
-import HeaderMobileNav from './Header.MobileNav';
+import HeaderNavLinks from './NavLinks';
+import SideNav from './SideNav';
 
 // create logo for header 
 function HeaderLogo() {
@@ -58,7 +58,7 @@ function Header() {
           <button type='button' onClick={handleShowMobileNavClick} className='flex justify-center items-center'>
             <FaBars size={24} />
           </button>
-          <HeaderMobileNav showNav={showMobileNav} handleShowNav={handleShowMobileNavClick} />
+          <SideNav showNav={showMobileNav} handleShowNav={handleShowMobileNavClick} />
         </div>
         
         <div className='hidden lg:block'>

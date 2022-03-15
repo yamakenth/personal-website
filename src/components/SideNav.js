@@ -6,7 +6,7 @@ import {
   FaFileAlt 
 } from 'react-icons/fa';
 
-import HeaderNavLinks from './Header.NavLinks';
+import HeaderNavLinks from './NavLinks';
 
 const EMAIL ='yamakenth@gmail.com';
 const LINKEDIN ='https://www.linkedin.com/in/yamakenth/';
