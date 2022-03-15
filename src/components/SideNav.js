@@ -7,20 +7,16 @@ import {
 } from 'react-icons/fa';
 
 import HeaderNavLinks from './NavLinks';
-
-const EMAIL ='yamakenth@gmail.com';
-const LINKEDIN ='https://www.linkedin.com/in/yamakenth/';
-const GITHUB='https://github.com/yamakenth';
-const RESUME ='https://drive.google.com/file/d/1bMAp7i-5VW5fCvf2T5T6E-TcE9nu7z17/view?usp=sharing';
+import { email, linkedIn, gitHub, resume } from '../data/external-links';
 
 // create social nav ul
 function SocialNavLinks() {
   return (
     <ul className='flex justify-between gap-5 pt-14'>
-      <li><a href={`mailto:${EMAIL}`}><FaEnvelope size={24} /></a></li>
-      <li><a href={LINKEDIN} target='_blank' rel='noreferrer'><FaLinkedin size={24} /></a></li>
-      <li><a href={GITHUB} target='_blank' rel='noreferrer'><FaGithubSquare size={24} /></a></li>
-      <li><a href={RESUME} target='_blank' rel='noreferrer'><FaFileAlt size={24} /></a></li>
+      <li><a href={`mailto:${email}`}><FaEnvelope size={24} /></a></li>
+      <li><a href={linkedIn} target='_blank' rel='noreferrer'><FaLinkedin size={24} /></a></li>
+      <li><a href={gitHub} target='_blank' rel='noreferrer'><FaGithubSquare size={24} /></a></li>
+      <li><a href={resume} target='_blank' rel='noreferrer'><FaFileAlt size={24} /></a></li>
     </ul>
   );
 }
@@ -39,9 +35,9 @@ function HeaderMobileNav(props) {
       md:px-10
       w-fit 
       h-screen
-      ${(props.showNav) ? 'translate-x-0' : 'translate-x-full hidden'}
       ease-linear duration-300
-    `}>
+      `}>
+      {/* ${(props.showNav) ? 'translate-x-0' : 'translate-x-full hidden'} */}
       <button type='button' className='absolute top-2 right-40 md:right-48' onClick={props.handleShowNav}>
         <FaTimes size={24} />
       </button>
