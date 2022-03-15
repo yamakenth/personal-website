@@ -36,7 +36,7 @@ const Header = () => {
         
         {/* sidenav */}
         <div className={`md:hidden ${(showSideNav) ? 'block' : 'hidden'}`}>
-          <SideNav setShowSideNav={setShowSideNav}/>
+          <SideNav setShowSideNav={setShowSideNav} />
         </div>
 
       </nav>
