@@ -8,7 +8,7 @@ const SideNav = (props) => {
   const closeSideNav = () => props.setShowSideNav(false);
   
   return (
-    <div className={`bg-white absolute top-0 right-0 px-6 py-3 min-w-[50vw] h-screen flex flex-col items-center justify-start`}>
+    <div className={`bg-white text-neutral-900 absolute top-0 right-0 px-6 py-3 min-w-[50vw] h-screen flex flex-col items-center justify-start`}>
       
       {/* close button */}
       <button type='button' className='self-start' onClick={closeSideNav}>
