@@ -3,7 +3,6 @@ import { FaTimes, FaEnvelope, FaLinkedin, FaGithubSquare, FaFileAlt } from 'reac
 import NavLinks from './NavLinks';
 import { email, linkedIn, gitHub, resume } from '../data/external-links';
 
-// create mobile nav 
 const SideNav = (props) => {
   const closeSideNav = () => props.setShowSideNav(false);
   
