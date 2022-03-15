@@ -19,6 +19,7 @@ const Header = () => {
   return (
     <header id='header' className={`sticky top-0 z-50 ${(!scrolled) ? 'bg-black/70 text-neutral-50' : 'bg-neutral-50 drop-shadow-md'}`}>
       <nav className='container py-2 flex justify-between items-center'>
+         
          {/* top-left logo */}
         <button type='button' onClick={handleLogoClick}>
           <h1 className='font-semibold tracking-widest'>Ken Yamada</h1>
@@ -32,9 +33,10 @@ const Header = () => {
         </button>
         
         {/* sidenav */}
-        <div className={(showSideNav) ? 'block' : 'hidden'}>
-          <SideNav />
+        <div className={`md:hidden ${(showSideNav) ? 'block' : 'hidden'}`}>
+          <SideNav setShowSideNav={setShowSideNav}/>
         </div>
+
       </nav>
     </header>
   );
