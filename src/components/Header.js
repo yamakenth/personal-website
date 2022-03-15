@@ -35,7 +35,6 @@ const Header = () => {
         <div className={(showSideNav) ? 'block' : 'hidden'}>
           <SideNav />
         </div>
-
       </nav>
     </header>
   );
