@@ -48,10 +48,10 @@ const SocialNavLinks = () => {
         </a>
       </li>
       <li>
-        <a href={resume} target='_blank' rel='noreferrer' className='contact-navitem hover:text-[#ed2224]' {...resumeHoverProps}>
+        <a href={resume} target='_blank' rel='noreferrer' className='contact-navitem hover:text-[#1fa463]' {...resumeHoverProps}>
           <FaFileAlt className='text-2xl' />
           {(resumeIsHovering) 
-            ? <span className='contact-navitem-span'>Open in new tab<FaExternalLinkAlt /></span>
+            ? <span className='contact-navitem-span'>Open in Google Drive<FaExternalLinkAlt /></span>
             : 'Resume'
           }
         </a>
