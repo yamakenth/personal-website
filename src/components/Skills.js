@@ -34,7 +34,7 @@ const misc = [
 ];
 
 // create each skills subsection
-function SkillsSub(props) {
+const SkillsRow = (props) => {
   const skills = props.skills;
 
   return (
@@ -56,25 +56,25 @@ function SkillsSub(props) {
 }
 
 // create skills section
-function Skills() {  
+const Skills = () => {  
   return (
     <section id='skills' className='bg-neutral-100'>
       <div className='container py-16'>
         <h2>Skills</h2>
         <div className='mt-5 px-2 md:px-6'>
           <h3>Languages</h3>
-          <SkillsSub skills={languages}/>
+          <SkillsRow skills={languages}/>
         </div>
         <div className='mt-5 px-2 md:px-6'>
           <h3>Frameworks &#38; Databases</h3>
-          <SkillsSub skills={frameworks}/>
+          <SkillsRow skills={frameworks}/>
         </div>
         <div className='mt-5 px-2 md:px-6'>
           <h3>Miscellaneous</h3>
-          <SkillsSub skills={misc}/>
+          <SkillsRow skills={misc}/>
         </div>
       </div>
-    </section>  
+    </section>
   );
 }
 
