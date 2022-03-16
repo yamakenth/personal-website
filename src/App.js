@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 
 const App = () => {
   return (
-    <div id='app' className='text-neutral-900 bg-[url("./assets/img/about/bg-sakura.jpeg")] sm:bg-[url("./assets/img/about/bg-sakura-md.jpeg")] bg-no-repeat bg-contain'>
+    <div id='app' className='text-neutral-900 bg-[url("./assets/img/background/bg-sakura.jpeg")] sm:bg-[url("./assets/img/background/bg-sakura-md.jpeg")] bg-no-repeat bg-contain'>
       <Header />
       <Home />
       <About />
