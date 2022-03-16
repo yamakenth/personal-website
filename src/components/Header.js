@@ -35,8 +35,8 @@ const Header = () => {
         </button>
         
         {/* sidenav */}
-        <div className={`md:hidden ${(showSideNav) ? 'block' : 'hidden'}`}>
-          <SideNav setShowSideNav={setShowSideNav} />
+        <div className='md:hidden fixed top-0 right-0'>
+          <SideNav setShowSideNav={setShowSideNav} showSideNav={showSideNav} />
         </div>
 
       </nav>

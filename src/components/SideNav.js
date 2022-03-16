@@ -9,7 +9,7 @@ const SideNav = (props) => {
   return (
     <>
       {/* navbar */}
-      <div className={`bg-white text-neutral-900 absolute top-0 right-0 px-6 py-3 min-w-[50vw] h-screen flex flex-col items-center justify-start z-50`}>
+      <div className={`bg-white text-neutral-900 absolute top-0 right-0 px-6 py-3 min-w-[50vw] h-screen flex flex-col items-center justify-start z-50 ${(props.showSideNav) ? 'translate-x-0' : 'translate-x-[100vw]'} ease-linear duration-500`}>
         {/* close button */}
         <button type='button' className='self-start' onClick={handleCloseNav}>
           <FaTimes className='text-2xl' />
@@ -26,7 +26,7 @@ const SideNav = (props) => {
       </div>
 
       {/* overlay */}
-      <div className='fixed top-0 left-0 h-screen w-screen bg-neutral-900/70 z-40' onClick={handleCloseNav}></div>
+      <div className={`absolute top-0 right-0 h-screen w-screen bg-neutral-900/70 z-40 ${(props.showSideNav) ? 'block' : 'hidden'}`} onClick={handleCloseNav}></div>
     </>
   );
 }
