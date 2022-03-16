@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
 // React hook to determine when element is visible on view port
-const useOnScreen = (ref) => {
+const useOnScreen = (ref, rootMargin='0px') => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
-    });
+    }, { rootMargin });
 
     if (ref.current) {
       observer.observe(ref.current);
