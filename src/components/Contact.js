@@ -9,18 +9,7 @@ import {
 } from 'react-icons/fa';
 
 import { email, linkedIn, gitHub, resume, sourceCode } from '../data/external-links';
-
-// create useHover hook
-function useHover() {
-  const [hovering, setHovering] = useState(false);
-
-  const onHoverProps = {
-    onMouseEnter: () => setHovering(true),
-    onMouseLeave: () => setHovering(false)
-  }
-
-  return [hovering, onHoverProps];
-}
+import { useHover } from '../utilities';
 
 // create social nav links
 function SocialNavLinks() {

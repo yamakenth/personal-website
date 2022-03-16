@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { FaCode } from 'react-icons/fa';
 
 import { aboutText } from '../data/external-links';
-import useOnScreen from '../utilities';
+import { useOnScreen } from '../utilities';
 
 const About = () => {
   const ref = useRef();
