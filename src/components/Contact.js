@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { 
   FaEnvelope, 
   FaLinkedin, 
@@ -9,6 +10,7 @@ import {
 
 import { email, linkedIn, gitHub, resume, sourceCode } from '../data/external-links';
 import { useHover } from '../utilities';
+import { useOnScreen } from '../utilities';
 
 // create social nav links
 const SocialNavLinks = () => {
@@ -17,10 +19,13 @@ const SocialNavLinks = () => {
   const [linkedinIsHovering, linkedinHoverProps] = useHover();
   const [githubIsHovering, githubHoverProps] = useHover();
   const [resumeIsHovering, resumeHoverProps] = useHover();
+
+  const ref = useRef();
+  const isVisible = useOnScreen(ref, '-100px');
   
   return (
-    <ul className='flex flex-col items-center justify-between gap-4 text-xl'>
-      <li>
+    <ul ref={ref} className='flex flex-col items-center justify-between gap-4 text-xl'>
+      <li className={`${(isVisible) ? 'translate-x-0' : 'translate-x-[100vw]'} ease-linear duration-500`}>
         <a href={`mailto:${email}`} className='contact-navitem hover:text-yellow-500' {...emailHoverProps}>
           <FaEnvelope className='text-2xl'/>
           {(emailIsHovering) 
@@ -29,7 +34,7 @@ const SocialNavLinks = () => {
           }
         </a>
       </li>
-      <li>
+      <li className={`${(isVisible) ? 'translate-x-0' : 'translate-x-[100vw]'} ease-linear duration-500 delay-100`}>
         <a href={linkedIn} target='_blank' rel='noreferrer' className='contact-navitem hover:text-[#0e76a8]' {...linkedinHoverProps}>
           <FaLinkedin className='text-2xl' />
           {(linkedinIsHovering) 
@@ -38,7 +43,7 @@ const SocialNavLinks = () => {
           }
         </a>
       </li>
-      <li>
+      <li className={`${(isVisible) ? 'translate-x-0' : 'translate-x-[100vw]'} ease-linear duration-500 delay-200`}>
         <a href={gitHub} target='_blank' rel='noreferrer' className='contact-navitem' {...githubHoverProps}>
           <FaGithubSquare className='text-2xl' />
           {(githubIsHovering) 
@@ -47,7 +52,7 @@ const SocialNavLinks = () => {
           }
         </a>
       </li>
-      <li>
+      <li className={`${(isVisible) ? 'translate-x-0' : 'translate-x-[100vw]'} ease-linear duration-500 delay-300`}>
         <a href={resume} target='_blank' rel='noreferrer' className='contact-navitem hover:text-[#1fa463]' {...resumeHoverProps}>
           <FaFileAlt className='text-2xl' />
           {(resumeIsHovering) 
