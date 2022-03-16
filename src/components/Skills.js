@@ -42,7 +42,7 @@ function SkillsSub(props) {
       {
         skills.map(skill => {
           return (
-            <div key={skill.name} className='flex flex-col justify-between items-center gap-2'>
+            <div key={skill.name} className='flex flex-col justify-between items-center gap-2 hover:-translate-y-2'>
               <div className='h-16 sm:h-24 aspect-square flex justify-center items-center bg-white rounded-md drop-shadow-md p-2'>
                 <img className='object-contain' src={skill.iconSrc} alt={skill.name} />
               </div>
@@ -66,7 +66,7 @@ function Skills() {
           <SkillsSub skills={languages}/>
         </div>
         <div className='mt-5 px-2 md:px-6'>
-          <h3>Frameworks/Libraries/Databases</h3>
+          <h3>Frameworks &#38; Databases</h3>
           <SkillsSub skills={frameworks}/>
         </div>
         <div className='mt-5 px-2 md:px-6'>
