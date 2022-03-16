@@ -17,7 +17,7 @@ const Header = () => {
   });
   
   return (
-    <header id='header' className={`sticky top-0 z-50 ${(!scrolled) ? 'bg-black/70 text-neutral-50' : 'bg-neutral-50 drop-shadow-md'}`}>
+    <header id='header' className={`fixed top-0 left-0 w-full z-50 ${(!scrolled) ?  'text-neutral-50' : 'bg-neutral-50 drop-shadow-md'}`}>
       <nav className='container py-2 flex justify-between items-center'>
          
          {/* top-left logo */}
