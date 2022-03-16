@@ -9,7 +9,7 @@ const NavLinks = (props) => {
         section.map(section => {
           return (
             <li key={section}>
-              <Link to={section} smooth={true} offset={-50} className='pb-1 px-1 font-light uppercase cursor-pointer navlink-effect hover:text-sky-600'>
+              <Link to={section} smooth={true} offset={-40} className='pb-1 px-1 font-light uppercase cursor-pointer navlink-effect hover:text-sky-600'>
                 {section}
               </Link>
             </li>
