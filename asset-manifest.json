@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.460d7ae5.css",
-    "main.js": "/personal-website/static/js/main.67aa1f7d.js",
+    "main.css": "/personal-website/static/css/main.2083cad8.css",
+    "main.js": "/personal-website/static/js/main.21d725a6.js",
     "static/media/tnwhomepageclone-screencapture.gif": "/personal-website/static/media/tnwhomepageclone-screencapture.cd6e2a74ab1fd46dd6d1.gif",
-    "static/media/bg-sakura-md.jpeg": "/personal-website/static/media/bg-sakura-md.9c0390acf553bcce001c.jpeg",
     "static/media/bg-sakura.jpeg": "/personal-website/static/media/bg-sakura.24a18912a96903bcf358.jpeg",
     "static/media/weatherapp-screencapture.gif": "/personal-website/static/media/weatherapp-screencapture.4b72b6b7b43d5cee97b7.gif",
     "static/media/blogapi-screencapture.gif": "/personal-website/static/media/blogapi-screencapture.ffef40d76b87e4011755.gif",
     "static/media/shoppingcart-screencapture.gif": "/personal-website/static/media/shoppingcart-screencapture.324e163f5cbc6130b5bf.gif",
+    "static/media/bg-sakura-lg.jpeg": "/personal-website/static/media/bg-sakura-lg.e365986105c550f73773.jpeg",
+    "static/media/bg-sakura-sm.jpeg": "/personal-website/static/media/bg-sakura-sm.526ea3f2b6f92ff3d046.jpeg",
     "static/media/calculator-screencapture.gif": "/personal-website/static/media/calculator-screencapture.59eb08aa421aae446590.gif",
     "static/media/mongoose.png": "/personal-website/static/media/mongoose.998152e4bc5fdd366c2c.png",
     "static/media/bootstrap.svg": "/personal-website/static/media/bootstrap.cfc8c34c02e2c46c6dfedb7d8d39327f.svg",
@@ -35,11 +36,11 @@
     "static/media/heroku.svg": "/personal-website/static/media/heroku.3f1cc0c4584482604a5fbcaf3d2fb7a5.svg",
     "static/media/firebase.svg": "/personal-website/static/media/firebase.0d5ec3e60614ea8e4d7abbf0729e969b.svg",
     "static/media/npm.svg": "/personal-website/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.460d7ae5.css.map": "/personal-website/static/css/main.460d7ae5.css.map",
-    "main.67aa1f7d.js.map": "/personal-website/static/js/main.67aa1f7d.js.map"
+    "main.2083cad8.css.map": "/personal-website/static/css/main.2083cad8.css.map",
+    "main.21d725a6.js.map": "/personal-website/static/js/main.21d725a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.460d7ae5.css",
-    "static/js/main.67aa1f7d.js"
+    "static/css/main.2083cad8.css",
+    "static/js/main.21d725a6.js"
   ]
 }
