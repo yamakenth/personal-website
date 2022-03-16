@@ -4,7 +4,7 @@ import { FaGithub, FaEye, FaCaretLeft, FaCaretRight, FaCircle } from 'react-icon
 import projects from '../data/projects';
 
 // left and right arrow for carousel
-function Control(props) {
+const Control = (props) => {
   return (
     <>
       <div className='group lg:hover:bg-neutral-900/40 absolute top-0 left-0 h-full rounded-l-xl flex flex-col items-center justify-center'>
@@ -22,7 +22,7 @@ function Control(props) {
 }
 
 // project details
-function Details(props) {
+const Details = (props) => {
   return (
     <div className='flex flex-col lg:flex-row justify-center items-center gap-6'>
       <img src={projects[props.curSlide].demoGif} alt='' className='w-full lg:w-3/5 2xl:w-1/2 rounded-lg'/>
@@ -53,8 +53,8 @@ function Details(props) {
 }
 
 // carousel dot nav
-function DotNav(props) {
-  function setSlide(e, i) {
+const DotNav = (props) => {
+  const setSlide = (e, i) => {
     props.setCurSlide(i);
   }
   
@@ -64,15 +64,9 @@ function DotNav(props) {
         [...Array(projects.length)].map((e, i) => {
           return (
             <button type='button' key={i} onClick={e => setSlide(e, i)}>
-              <FaCircle className={`
-                text-[0.5rem] 
-                text-neutral-500 
-                hover:text-neutral-400 
-                hover:scale-125
-                ${(i === props.curSlide) ? 'text-neutral-400 scale-125' : null}
-              `} />
+              <FaCircle className={`text-[0.5rem] text-neutral-500 hover:text-neutral-400 hover:scale-125 ${(i === props.curSlide) ? 'text-neutral-400 scale-125' : null}`} />
             </button>
-          )
+          );
         })
       }
     </div>
@@ -80,14 +74,14 @@ function DotNav(props) {
 }
 
 // project
-function Projects() {
+const Projects = () => {
   const [curSlide, setCurSlide] = useState(0);
 
-  function getNextSlide() {
+  const getNextSlide = () => {
     return (curSlide === projects.length - 1) ? setCurSlide(0) : setCurSlide(curSlide + 1);
   }
 
-  function getPrevSlide() {
+  const getPrevSlide = () => {
     return (curSlide === 0) ? setCurSlide(projects.length - 1) : setCurSlide(curSlide - 1);
   }
   
@@ -95,24 +89,7 @@ function Projects() {
     <section id='projects' className='bg-neutral-50'>
       <div className='container py-16 flex flex-col justify-center items-center gap-6'>
         <h2 className='self-start'>Projects</h2>
-        <div className='
-          border-solid 
-          border 
-          border-neutral-200 
-          rounded-xl 
-          drop-shadow-md 
-          p-6 
-          flex
-          flex-col
-          justify-between
-          h-[50rem]
-          md:h-[58rem]
-          lg:h-[32rem]
-          xl:h-[34rem]
-          2xl:h-[36rem]
-          w-full
-          relative
-        '>
+        <div className='border-solid border border-neutral-200 rounded-xl drop-shadow-md p-6 flex flex-col justify-between h-[50rem] md:h-[58rem] lg:h-[32rem] xl:h-[34rem] 2xl:h-[36rem] w-full relative'>
           {/* Carousel control */}
           <Control getNextSlide={getNextSlide} getPrevSlide={getPrevSlide} />
           {/* Project details */}
