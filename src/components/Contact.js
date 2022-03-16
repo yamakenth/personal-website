@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { 
   FaEnvelope, 
   FaLinkedin, 
@@ -12,7 +11,7 @@ import { email, linkedIn, gitHub, resume, sourceCode } from '../data/external-li
 import { useHover } from '../utilities';
 
 // create social nav links
-function SocialNavLinks() {
+const SocialNavLinks = () => {
   // useHover to change text
   const [emailIsHovering, emailHoverProps] = useHover();
   const [linkedinIsHovering, linkedinHoverProps] = useHover();
@@ -22,37 +21,37 @@ function SocialNavLinks() {
   return (
     <ul className='flex flex-col items-center justify-between gap-4 text-xl'>
       <li>
-        <a href={`mailto:${email}`} className='contact-navitem hover:text-sky-600' {...emailHoverProps}>
-          <FaEnvelope size={24} />
+        <a href={`mailto:${email}`} className='contact-navitem hover:text-yellow-500' {...emailHoverProps}>
+          <FaEnvelope className='text-2xl'/>
           {(emailIsHovering) 
-            ? <span className='contact-navitem-span'>yamakenth@gmail.com<FaExternalLinkAlt size={14} /></span> 
+            ? <span className='contact-navitem-span'>{email}<FaExternalLinkAlt /></span> 
             : 'Email'
           }
         </a>
       </li>
       <li>
-        <a href={linkedIn} target='_blank' rel='noreferrer' className='contact-navitem hover:text-sky-600' {...linkedinHoverProps}>
-          <FaLinkedin size={24} />
+        <a href={linkedIn} target='_blank' rel='noreferrer' className='contact-navitem hover:text-[#0e76a8]' {...linkedinHoverProps}>
+          <FaLinkedin className='text-2xl' />
           {(linkedinIsHovering) 
-            ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt size={14} /></span>
+            ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt /></span>
             : 'LinkedIn'
           }
         </a>
       </li>
       <li>
-        <a href={gitHub} target='_blank' rel='noreferrer' className='contact-navitem hover:text-sky-600' {...githubHoverProps}>
-          <FaGithubSquare size={24} />
+        <a href={gitHub} target='_blank' rel='noreferrer' className='contact-navitem' {...githubHoverProps}>
+          <FaGithubSquare className='text-2xl' />
           {(githubIsHovering) 
-            ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt size={14} /></span>
+            ? <span className='contact-navitem-span'>yamakenth<FaExternalLinkAlt /></span>
             : 'GitHub'
           }
         </a>
       </li>
       <li>
-        <a href={resume} target='_blank' rel='noreferrer' className='contact-navitem hover:text-sky-600' {...resumeHoverProps}>
-          <FaFileAlt size={24} />
+        <a href={resume} target='_blank' rel='noreferrer' className='contact-navitem hover:text-[#ed2224]' {...resumeHoverProps}>
+          <FaFileAlt className='text-2xl' />
           {(resumeIsHovering) 
-            ? <span className='contact-navitem-span'>Open in new tab<FaExternalLinkAlt size={14} /></span>
+            ? <span className='contact-navitem-span'>Open in new tab<FaExternalLinkAlt /></span>
             : 'Resume'
           }
         </a>
@@ -62,7 +61,7 @@ function SocialNavLinks() {
 }
 
 // create contact 
-function Contact() {
+const Contact = () => {
   // current year for copyright 
   const curYear = new Date().getFullYear();
 
@@ -75,7 +74,7 @@ function Contact() {
           <p className='flex justify-start text-sm mt-5'>Copyright &copy; {curYear}&nbsp;
             yamakenth
             <a href={sourceCode} target='_blank' rel='noreferrer' className='flex gap-1 items-center ml-2'>
-               <FaGithub size={18} />
+               <FaGithub />
             </a>
           </p>
         </footer>

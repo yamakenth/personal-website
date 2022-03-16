@@ -48,7 +48,7 @@ body {
 }
 
 .contact-navitem {
-  @apply flex gap-2 items-center hover:underline;
+  @apply flex gap-2 items-center hover:underline transition-all duration-500;
 }
 
 .contact-navitem-span {
