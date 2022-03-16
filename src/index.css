@@ -19,6 +19,7 @@ a {
   @apply text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 
+html,
 body {
   @apply overflow-x-hidden
 }
