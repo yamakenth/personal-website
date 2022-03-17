@@ -20,7 +20,7 @@ const Projects = () => {
         <h2 className='mb-5'>Projects</h2>
 
         {/* carousel */}
-        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 w-full grid grid-cols-2 gap-x-3 gap-y-6 md:gap-y-0 relative'>
+        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 w-full grid grid-cols-2 gap-x-3 gap-y-6 md:gap-y-0 relative h-[50rem] md:h-[30rem] xl:h-fit'>
           
           {/* demo */}
           <div className='border border-solid border-green-300 col-span-full md:col-span-1'>
@@ -40,7 +40,7 @@ const Projects = () => {
             {
               projects.map((project, i) => {
                 return (
-                  <div key={i} className={`${(i === curSlide) ? null : 'hidden'}`}>
+                  <div key={i} className={`${(i === curSlide) ? null : 'hidden'} h-full flex flex-col justify-between items-center`}>
                     {/* text */}
                     <div>
                       <h3 className='underline font-bold mb-2'>{project.name}</h3>
