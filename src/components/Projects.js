@@ -20,7 +20,7 @@ const Projects = () => {
         <h2 className='mb-5'>Projects</h2>
 
         {/* carousel */}
-        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 w-full grid grid-cols-8 gap-x-3 gap-y-6 relative'>
+        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 max-w-5xl mx-auto grid grid-cols-8 gap-x-6 gap-y-6 relative'>
           
           {/* demo */}
           <div className='col-span-full md:col-span-4 xl:col-span-5'>
