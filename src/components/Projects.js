@@ -13,6 +13,10 @@ const Projects = () => {
   const getPrevSlide = () => {
     return (curSlide === 0) ? setCurSlide(projects.length - 1) : setCurSlide(curSlide - 1);
   }
+
+  const moveSlide = (i) => {
+    setCurSlide(i);
+  }
   
   return (
     <section id='projects' className='bg-neutral-50'>
@@ -68,8 +72,8 @@ const Projects = () => {
             {
               [...Array(projects.length)].map((e, i) => {
                 return (
-                  <button type='button' key={i} onClick={() => console.log('clicked')}>
-                    <FaCircle className={`text-[0.5rem] text-neutral-500 hover:text-neutral-400 hover:scale-125`}/>
+                  <button type='button' key={i} onClick={() => moveSlide(i)}>
+                    <FaCircle className={`text-[0.5rem] text-neutral-500 hover:text-neutral-400 hover:scale-125 ${(i === curSlide) ? 'text-neutral-400 scale-125' : null}`}/>
                   </button>
                 );
               })
