@@ -29,7 +29,7 @@ const Projects = () => {
                 .map(project => project.demoGif)
                 .map((src, i) => {
                   return ( 
-                    <img key={i} src={src} alt={`Live demo for ${projects[0].name}`} className={`rounded-lg ${(i === curSlide) ? null : 'hidden'}`} />
+                    <img key={i} src={src} alt={`Live demo of project`} className={`rounded-lg ${(i === curSlide) ? null : 'hidden'}`} />
                   );
                 })
             }
@@ -37,22 +37,30 @@ const Projects = () => {
 
           {/* text & button */}
           <div className='border border-solid border-green-300 col-span-full md:col-span-1'>
-            {/* text */}
-            <div>
-              <h3 className='underline font-bold mb-2'>{projects[0].name}</h3>
-              <p className='mb-1'><span className='font-bold'>Summary:&nbsp;</span>{projects[0].summary}</p>
-              <p className='mb-1'><span className='font-bold'>Features:&nbsp;</span>{projects[0].features}</p>
-              <p className='mb-1'><span className='font-bold'>Technologies Used:&nbsp;</span>{projects[0].technologies}</p>
-            </div>
-            {/* button */}
-            <div className='flex justify-center items-center'>
-              <a href={projects[0].demoLink} target='_blank' rel='noreferrer' className='btn btn-secondary'>
-                <FaEye />&nbsp;Demo
-              </a>
-              <a href={projects[0].repoLink} target='_blank' rel='noreferrer' className='btn btn-secondary'>
-                <FaGithub />&nbsp;Repo
-              </a>
-            </div>
+            {
+              projects.map((project, i) => {
+                return (
+                  <div key={i} className={`${(i === curSlide) ? null : 'hidden'}`}>
+                    {/* text */}
+                    <div>
+                      <h3 className='underline font-bold mb-2'>{project.name}</h3>
+                      <p className='mb-1'><span className='font-bold'>Summary:&nbsp;</span>{project.summary}</p>
+                      <p className='mb-1'><span className='font-bold'>Features:&nbsp;</span>{project.features}</p>
+                      <p className='mb-1'><span className='font-bold'>Technologies Used:&nbsp;</span>{project.technologies}</p>
+                    </div>
+                    {/* button */}
+                    <div className='flex justify-center items-center'>
+                      <a href={project.demoLink} target='_blank' rel='noreferrer' className='btn btn-secondary'>
+                        <FaEye />&nbsp;Demo
+                      </a>
+                      <a href={project.repoLink} target='_blank' rel='noreferrer' className='btn btn-secondary'>
+                        <FaGithub />&nbsp;Repo
+                      </a>
+                    </div>
+                  </div>
+                );
+              })
+            }
           </div>
 
           {/* dots navigation */}
