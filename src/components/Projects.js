@@ -20,7 +20,7 @@ const Projects = () => {
         <h2 className='mb-5'>Projects</h2>
 
         {/* carousel */}
-        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 w-full grid grid-cols-8 gap-x-3 gap-y-6 md:gap-y-0 relative h-[50rem] md:h-[30rem] xl:h-[36rem]'>
+        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 w-full grid grid-cols-8 gap-x-3 gap-y-6 md:gap-y-0 relative'>
           
           {/* demo */}
           <div className='border border-solid border-green-300 col-span-full md:col-span-4 xl:col-span-5'>
@@ -36,7 +36,7 @@ const Projects = () => {
           </div>
 
           {/* text & button */}
-          <div className='border border-solid border-green-300 col-span-full md:col-span-4 xl:col-span-3'>
+          <div className='border border-solid border-green-300 col-span-full md:col-span-4 xl:col-span-3 h-[33rem] xxs:h-[28rem] xs:h-[24rem] sm:h-[18rem] md:h-[24rem] xl:h-auto'>
             {
               projects.map((project, i) => {
                 return (
