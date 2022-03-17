@@ -19,26 +19,24 @@ const Projects = () => {
       <div className='container py-16'>
         <h2 className='mb-5'>Projects</h2>
 
-        <p>{curSlide}</p>
-
         {/* carousel */}
-        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 w-full grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-y-0 relative'>
+        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 w-full grid grid-cols-2 gap-x-3 gap-y-6 md:gap-y-0 relative'>
           
           {/* demo */}
-          <div className='border border-solid border-green-300 col-span-full sm:col-span-1'>
+          <div className='border border-solid border-green-300 col-span-full md:col-span-1'>
             {
               projects
                 .map(project => project.demoGif)
                 .map((src, i) => {
                   return ( 
-                    <img src={src} alt={`Live demo for ${projects[0].name}`} className={`rounded-lg ${(i === 2) ? null : 'hidden'}`} />
+                    <img key={i} src={src} alt={`Live demo for ${projects[0].name}`} className={`rounded-lg ${(i === curSlide) ? null : 'hidden'}`} />
                   );
                 })
             }
           </div>
 
           {/* text & button */}
-          <div className='border border-solid border-green-300 col-span-full sm:col-span-1'>
+          <div className='border border-solid border-green-300 col-span-full md:col-span-1'>
             {/* text */}
             <div>
               <h3 className='underline font-bold mb-2'>{projects[0].name}</h3>
