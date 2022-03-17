@@ -4,17 +4,37 @@ import { FaGithub, FaEye, FaCaretLeft, FaCaretRight, FaCircle } from 'react-icon
 import projects from '../data/projects';
 
 const Projects = () => {
+  const [curSlide, setCurSlide] = useState(0);
+
+  const getNextSlide = () => {
+    return (curSlide === projects.length - 1) ? setCurSlide(0) : setCurSlide(curSlide + 1);
+  }
+
+  const getPrevSlide = () => {
+    return (curSlide === 0) ? setCurSlide(projects.length - 1) : setCurSlide(curSlide - 1);
+  }
+  
   return (
     <section id='projects' className='bg-neutral-50'>
       <div className='container py-16'>
         <h2 className='mb-5'>Projects</h2>
+
+        <p>{curSlide}</p>
 
         {/* carousel */}
         <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 w-full grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-y-0 relative'>
           
           {/* demo */}
           <div className='border border-solid border-green-300 col-span-full sm:col-span-1'>
-            <img src={projects[0].demoGif} alt={`Live demo for ${projects[0].name}`} className='rounded-lg' />
+            {
+              projects
+                .map(project => project.demoGif)
+                .map((src, i) => {
+                  return ( 
+                    <img src={src} alt={`Live demo for ${projects[0].name}`} className={`rounded-lg ${(i === 2) ? null : 'hidden'}`} />
+                  );
+                })
+            }
           </div>
 
           {/* text & button */}
@@ -37,7 +57,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* nav */}
+          {/* dots navigation */}
           <div className='border border-solid border-green-300 col-span-full flex items-center justify-center gap-3 py-3'>
             {
               [...Array(projects.length)].map((e, i) => {
@@ -49,21 +69,20 @@ const Projects = () => {
               })
             }
           </div>
-
+        
           {/* carousel left/right controls */}
           <div className='group md:hover:bg-neutral-900/40 absolute top-0 left-0 h-full w-fit rounded-l-xl flex justify-center items-center'>
-            <button type='button' onClick={() => console.log('clicked')}>
+            <button type='button' onClick={getPrevSlide}>
               <FaCaretLeft className='text-5xl text-neutral-500/60 md:group-hover:text-neutral-50/80' />
             </button>
           </div>
           <div className='group md:hover:bg-neutral-900/40 absolute top-0 right-0 h-full w-fit rounded-r-xl flex justify-center items-center'>
-            <button type='button' onClick={() => console.log('clicked')}>
+            <button type='button' onClick={getNextSlide}>
               <FaCaretRight className='text-5xl text-neutral-500/60 md:group-hover:text-neutral-50/80' />
             </button>
           </div>
-        
         </div>
-      
+
       </div>
     </section>
   );
