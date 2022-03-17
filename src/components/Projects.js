@@ -20,23 +20,23 @@ const Projects = () => {
         <h2 className='mb-5'>Projects</h2>
 
         {/* carousel */}
-        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 w-full grid grid-cols-2 gap-x-3 gap-y-6 md:gap-y-0 relative h-[50rem] md:h-[30rem] xl:h-fit'>
+        <div className='border border-solid border-neutral-200 rounded-xl drop-shadow-md p-6 lg:px-12 w-full grid grid-cols-8 gap-x-3 gap-y-6 md:gap-y-0 relative h-[50rem] md:h-[30rem] xl:h-[36rem]'>
           
           {/* demo */}
-          <div className='border border-solid border-green-300 col-span-full md:col-span-1'>
+          <div className='border border-solid border-green-300 col-span-full md:col-span-4 xl:col-span-5'>
             {
               projects
                 .map(project => project.demoGif)
                 .map((src, i) => {
                   return ( 
-                    <img key={i} src={src} alt={`Live demo of project`} className={`rounded-lg ${(i === curSlide) ? null : 'hidden'}`} />
+                    <img key={i} src={src} alt={`Live demo of project`} className={`rounded-lg ${(i === curSlide) ? null : 'hidden'} xl:h-full`} />
                   );
                 })
             }
           </div>
 
           {/* text & button */}
-          <div className='border border-solid border-green-300 col-span-full md:col-span-1'>
+          <div className='border border-solid border-green-300 col-span-full md:col-span-4 xl:col-span-3'>
             {
               projects.map((project, i) => {
                 return (
