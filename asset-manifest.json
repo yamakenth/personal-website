@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.ff667ad6.css",
-    "main.js": "/personal-website/static/js/main.b84beb19.js",
-    "static/media/tnwhomepageclone-screencapture.gif": "/personal-website/static/media/tnwhomepageclone-screencapture.63d783ff210e090b902d.gif",
+    "main.css": "/personal-website/static/css/main.6d285101.css",
+    "main.js": "/personal-website/static/js/main.62aea508.js",
+    "static/media/tnwhomepageclone-screencapture.gif": "/personal-website/static/media/tnwhomepageclone-screencapture.a40b35e650708297880c.gif",
     "static/media/bg-sakura.jpeg": "/personal-website/static/media/bg-sakura.24a18912a96903bcf358.jpeg",
-    "static/media/weatherapp-screencapture.gif": "/personal-website/static/media/weatherapp-screencapture.85c3a1ed4c9c038c2545.gif",
+    "static/media/weatherapp-screencapture.gif": "/personal-website/static/media/weatherapp-screencapture.94f369fc7cbacbfe61f3.gif",
     "static/media/bg-sakura-lg.jpeg": "/personal-website/static/media/bg-sakura-lg.e365986105c550f73773.jpeg",
-    "static/media/shoppingcart-screencapture.gif": "/personal-website/static/media/shoppingcart-screencapture.ef79d8c206584f49da22.gif",
-    "static/media/blogapi-screencapture.gif": "/personal-website/static/media/blogapi-screencapture.b3be31958642308e8a72.gif",
+    "static/media/shoppingcart-screencapture.gif": "/personal-website/static/media/shoppingcart-screencapture.2522cc169832441b121c.gif",
+    "static/media/blogapi-screencapture.gif": "/personal-website/static/media/blogapi-screencapture.a428b33f3f9947fc6e1c.gif",
     "static/media/bg-sakura-sm.jpeg": "/personal-website/static/media/bg-sakura-sm.526ea3f2b6f92ff3d046.jpeg",
-    "static/media/calculator-screencapture.gif": "/personal-website/static/media/calculator-screencapture.7a863c325f6004573eeb.gif",
+    "static/media/calculator-screencapture.gif": "/personal-website/static/media/calculator-screencapture.43212d555ddad63bed68.gif",
     "static/media/mongoose.png": "/personal-website/static/media/mongoose.998152e4bc5fdd366c2c.png",
     "static/media/bootstrap.svg": "/personal-website/static/media/bootstrap.cfc8c34c02e2c46c6dfedb7d8d39327f.svg",
     "static/media/mongodb.svg": "/personal-website/static/media/mongodb.6835c61a518a732eb8318d43dfe8f700.svg",
@@ -36,11 +36,11 @@
     "static/media/heroku.svg": "/personal-website/static/media/heroku.3f1cc0c4584482604a5fbcaf3d2fb7a5.svg",
     "static/media/firebase.svg": "/personal-website/static/media/firebase.0d5ec3e60614ea8e4d7abbf0729e969b.svg",
     "static/media/npm.svg": "/personal-website/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.ff667ad6.css.map": "/personal-website/static/css/main.ff667ad6.css.map",
-    "main.b84beb19.js.map": "/personal-website/static/js/main.b84beb19.js.map"
+    "main.6d285101.css.map": "/personal-website/static/css/main.6d285101.css.map",
+    "main.62aea508.js.map": "/personal-website/static/js/main.62aea508.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff667ad6.css",
-    "static/js/main.b84beb19.js"
+    "static/css/main.6d285101.css",
+    "static/js/main.62aea508.js"
   ]
 }
