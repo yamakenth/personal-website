@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.bab788f9.css",
+    "main.css": "/personal-website/static/css/main.45aceed4.css",
     "main.js": "/personal-website/static/js/main.62aea508.js",
     "static/media/tnwhomepageclone-screencapture.gif": "/personal-website/static/media/tnwhomepageclone-screencapture.a40b35e650708297880c.gif",
     "static/media/weatherapp-screencapture.gif": "/personal-website/static/media/weatherapp-screencapture.94f369fc7cbacbfe61f3.gif",
-    "static/media/bg-sakura-lg.jpeg": "/personal-website/static/media/bg-sakura-lg.e365986105c550f73773.jpeg",
     "static/media/shoppingcart-screencapture.gif": "/personal-website/static/media/shoppingcart-screencapture.2522cc169832441b121c.gif",
     "static/media/blogapi-screencapture.gif": "/personal-website/static/media/blogapi-screencapture.a428b33f3f9947fc6e1c.gif",
-    "static/media/bg-sakura-sm.jpeg": "/personal-website/static/media/bg-sakura-sm.526ea3f2b6f92ff3d046.jpeg",
+    "static/media/bg-sakura-lg.jpeg": "/personal-website/static/media/bg-sakura-lg.68929955d09482622143.jpeg",
+    "static/media/bg-sakura-sm.jpeg": "/personal-website/static/media/bg-sakura-sm.7ecb8a221a0d03277d86.jpeg",
     "static/media/calculator-screencapture.gif": "/personal-website/static/media/calculator-screencapture.43212d555ddad63bed68.gif",
     "static/media/bg-sakura.jpeg": "/personal-website/static/media/bg-sakura.ab36de229626092682ba.jpeg",
     "static/media/mongoose.png": "/personal-website/static/media/mongoose.998152e4bc5fdd366c2c.png",
@@ -36,11 +36,11 @@
     "static/media/heroku.svg": "/personal-website/static/media/heroku.3f1cc0c4584482604a5fbcaf3d2fb7a5.svg",
     "static/media/firebase.svg": "/personal-website/static/media/firebase.0d5ec3e60614ea8e4d7abbf0729e969b.svg",
     "static/media/npm.svg": "/personal-website/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.bab788f9.css.map": "/personal-website/static/css/main.bab788f9.css.map",
+    "main.45aceed4.css.map": "/personal-website/static/css/main.45aceed4.css.map",
     "main.62aea508.js.map": "/personal-website/static/js/main.62aea508.js.map"
   },
   "entrypoints": [
-    "static/css/main.bab788f9.css",
+    "static/css/main.45aceed4.css",
     "static/js/main.62aea508.js"
   ]
 }
