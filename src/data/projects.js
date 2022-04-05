@@ -6,12 +6,13 @@ import WeatherAppDemo from '../assets/img/projects/weatherapp-screencapture.gif'
 
 const blogApi = {
   name: 'Blog API',
-  summary: `A blog web application with one user front-end, one admin front-end, and on back-end 
-  built using the MERN stack.`,
+  summary: `A full-stack blog web application with a React client front-end, a React CMS front-end, 
+  and an Express back-end built using the MERN stack. The backend was designed with RESTful 
+  organization in mind.`,
   features: `Users can read and comment on published posts on the user webpage. Admins can signup, 
   login, create, read, edit, and delete blog posts as well as comments on the admin webpage.`,
-  technologies: `HTML, CSS, Bootstrap, JavaScript, React.js, Node.js, Express.js, Passport.js, MongoDB, 
-  Mongoose, Heroku`,
+  technologies: `HTML, CSS, Bootstrap, JavaScript, React.js, Node.js, Express.js, Passport.js, 
+  MongoDB, Mongoose, Heroku`,
   demoGif: blogApiDemo,
   demoLink: 'https://yamakenth.github.io/blog-api-client/',
   repoLink: 'https://github.com/yamakenth/blog-api-client'
@@ -31,7 +32,7 @@ const calculator = {
 
 const shoppingCart = {
   name: 'Shopping Cart',
-  summary: `A simple online store page with a capability to add items to cart`,
+  summary: `A simple online store page where user can add items to cart.`,
   features: `Allows users to navigate between Home, Product, and Contact pages. Enables users to 
   add, remove, or edit number of products in cart. Shows number of items in cart in the header.`,
   technologies: 'HTML, CSS, JavaScript, React.js',
@@ -43,7 +44,8 @@ const shoppingCart = {
 const tnwHomepageClone = {
   name: 'TNW Homepage Clone',
   summary: 'A clone of The Next Web\'s homepage built with reponsive design.',
-  features: 'Responsive design with 2 break points. Use of animation to provide user feedback.',
+  features: `Responsive design with 2 break points without the use of CSS framework. Use of 
+  animation to provide user feedback.`,
   technologies: 'HTML, CSS',
   demoGif: TnwHomepageCloneDemo,
   demoLink: 'https://yamakenth.github.io/tnw-homepage-clone/',
