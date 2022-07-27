@@ -7,9 +7,9 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-import { email, gitHub, linkedIn, resume } from "../data/external-links";
-import { useHover } from "../utilities";
-import { useOnScreen } from "../utilities";
+import { email, gitHub, linkedIn, resume } from "../../data/external-links";
+import { useHover } from "../../utilities";
+import { useOnScreen } from "../../utilities";
 
 export default function SocialNavLinks(): JSX.Element {
   const [emailIsHovering, emailHoverProps] = useHover();

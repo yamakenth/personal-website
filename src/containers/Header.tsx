@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 
-import NavLinks from "../components/NavLinks";
-import SideNav from "../components/SideNav";
+import NavLinks from "../components/Navs/NavLinks";
+import SideNav from "../components/Navs/SideNav";
 
 export default function Header(): JSX.Element {
   const [scrolled, setScrolled] = useState(false);

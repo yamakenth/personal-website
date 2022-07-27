@@ -7,7 +7,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-import { email, gitHub, linkedIn, resume } from "../data/external-links";
+import { email, gitHub, linkedIn, resume } from "../../data/external-links";
 import NavLinks from "./NavLinks";
 
 interface SideNavProps {

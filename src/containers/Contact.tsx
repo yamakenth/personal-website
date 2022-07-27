@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
-import SocialNavLinks from "../components/SocialNavLinks";
+import SocialNavLinks from "../components/Navs/SocialNavLinks";
 import { sourceCode } from "../data/external-links";
 
 export default function Contact(): JSX.Element {
