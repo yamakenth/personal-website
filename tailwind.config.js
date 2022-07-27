@@ -1,24 +1,22 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
     container: {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        lg: "4rem"
-      }
+        lg: "4rem",
+      },
     },
     screens: {
-      "xxs": "375px",
-      "xs": "425px",
+      xxs: "375px",
+      xs: "425px",
       "1.5xl": "1440px",
       ...defaultTheme.screens,
     },
   },
   plugins: [],
-}
+};

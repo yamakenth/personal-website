@@ -1,6 +1,6 @@
-import icons from '../assets/img';
+import icons from "../assets/img";
 
-// arrays to order skills 
+// arrays to order skills
 const languages = [
   icons.javascript,
   icons.html,
@@ -8,7 +8,7 @@ const languages = [
   icons.python,
   icons.r,
   icons.mysql,
-  icons.java
+  icons.java,
 ];
 const frameworks = [
   icons.react,
@@ -19,7 +19,7 @@ const frameworks = [
   icons.mongoose,
   icons.pug,
   icons.bootstrap,
-  icons.tailwindcss
+  icons.tailwindcss,
 ];
 const misc = [
   icons.git,
@@ -30,7 +30,7 @@ const misc = [
   icons.jest,
   icons.firebase,
   icons.tableau,
-  icons.powerbi
+  icons.powerbi,
 ];
 
 // create each skills subsection
@@ -38,44 +38,49 @@ const SkillsRow = (props) => {
   const skills = props.skills;
 
   return (
-    <div className='mt-2 grid gap-4 grid-cols-4 md:grid-cols-6 lg:grid-cols-8'>
-      {
-        skills.map(skill => {
-          return (
-            <div key={skill.name} className='flex flex-col justify-between items-center gap-2 hover:-translate-y-2'>
-              <div className='h-16 sm:h-24 aspect-square flex justify-center items-center bg-white rounded-md drop-shadow-md p-2'>
-                <img className='object-contain' src={skill.iconSrc} alt={skill.name} />
-              </div>
-              <p className='text-sm sm:text-base'>{skill.name}</p>
+    <div className="mt-2 grid gap-4 grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+      {skills.map((skill) => {
+        return (
+          <div
+            key={skill.name}
+            className="flex flex-col justify-between items-center gap-2 hover:-translate-y-2"
+          >
+            <div className="h-16 sm:h-24 aspect-square flex justify-center items-center bg-white rounded-md drop-shadow-md p-2">
+              <img
+                className="object-contain"
+                src={skill.iconSrc}
+                alt={skill.name}
+              />
             </div>
-          );
-        })
-      }
+            <p className="text-sm sm:text-base">{skill.name}</p>
+          </div>
+        );
+      })}
     </div>
   );
-}
+};
 
 // create skills section
-const Skills = () => {  
+const Skills = () => {
   return (
-    <section id='skills' className='bg-neutral-100'>
-      <div className='container py-16'>
+    <section id="skills" className="bg-neutral-100">
+      <div className="container py-16">
         <h2>Skills</h2>
-        <div className='mt-5 px-2 md:px-6'>
+        <div className="mt-5 px-2 md:px-6">
           <h3>Languages</h3>
-          <SkillsRow skills={languages}/>
+          <SkillsRow skills={languages} />
         </div>
-        <div className='mt-5 px-2 md:px-6'>
+        <div className="mt-5 px-2 md:px-6">
           <h3>Frameworks &#38; Databases</h3>
-          <SkillsRow skills={frameworks}/>
+          <SkillsRow skills={frameworks} />
         </div>
-        <div className='mt-5 px-2 md:px-6'>
+        <div className="mt-5 px-2 md:px-6">
           <h3>Miscellaneous</h3>
-          <SkillsRow skills={misc}/>
+          <SkillsRow skills={misc} />
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Skills;

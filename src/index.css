@@ -21,13 +21,11 @@ a {
 
 html,
 body {
-  @apply overflow-x-hidden
+  @apply overflow-x-hidden;
 }
 
 .navlink-effect {
-  background: 
-    linear-gradient(currentColor, #0284c7) 
-    bottom /var(--d, 0) 3px 
+  background: linear-gradient(currentColor, #0284c7) bottom / var(--d, 0) 3px
     no-repeat;
   transition: 0.5s;
 }
