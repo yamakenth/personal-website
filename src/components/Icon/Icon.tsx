@@ -2,10 +2,10 @@ import React from "react";
 
 import icons from "./Icons";
 
-export type TIconName = keyof typeof icons;
+export type IIconName = keyof typeof icons;
 
 interface IconProps {
-  name: TIconName;
+  name: IIconName;
 }
 
 export default function Icon({ name }: IconProps): JSX.Element {
