@@ -1,31 +1,44 @@
-// @ts-nocheck
+import React from "react";
 import { Link } from "react-scroll";
 
-const section = ["home", "about", "skills", "projects", "contact"];
+const CONTAINERS = ["home", "about", "skills", "projects", "contact"];
 
-const NavLinks = (props) => {
+interface NavLinksProps {
+  isMobile: boolean;
+}
+
+export default function NavLinks({ isMobile }: NavLinksProps): JSX.Element {
   return (
     <ul
-      className={`flex justify-end items-center gap-8 ${
-        props.isMobile ? "flex-col py-6" : null
-      }`}
+      className={`
+        flex 
+        justify-end 
+        items-center 
+        gap-8 
+        ${isMobile ? "flex-col py-6" : null}
+      `}
     >
-      {section.map((section) => {
+      {CONTAINERS.map((container) => {
         return (
-          <li key={section}>
+          <li key={container}>
             <Link
-              to={section}
+              to={container}
               smooth={true}
               offset={-40}
-              className="pb-1 px-1 font-light uppercase cursor-pointer navlink-effect hover:text-sky-600"
+              className="
+                pb-1 
+                px-1 
+                font-light 
+                uppercase 
+                cursor-pointer 
+                navlink-effect 
+                hover:text-sky-600"
             >
-              {section}
+              {container}
             </Link>
           </li>
         );
       })}
     </ul>
   );
-};
-
-export default NavLinks;
+}

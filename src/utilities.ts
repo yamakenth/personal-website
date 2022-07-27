@@ -1,8 +1,10 @@
-// @ts-nocheck
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-// React hook to determine when element is visible on view port
-const useOnScreen = (ref, rootMargin = "0px") => {
+// hook to determine when element is visible on view port
+export function useOnScreen(
+  ref: React.MutableRefObject<HTMLElement>,
+  rootMargin = "0px"
+): boolean {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
@@ -23,10 +25,15 @@ const useOnScreen = (ref, rootMargin = "0px") => {
   });
 
   return isIntersecting;
-};
+}
 
-// React hook for css hover
-const useHover = () => {
+// hook for css hover
+interface IOnHoverProps {
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+}
+
+export function useHover(): [boolean, IOnHoverProps] {
   const [hovering, setHovering] = useState(false);
 
   const onHoverProps = {
@@ -35,6 +42,4 @@ const useHover = () => {
   };
 
   return [hovering, onHoverProps];
-};
-
-export { useOnScreen, useHover };
+}

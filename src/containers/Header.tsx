@@ -5,12 +5,13 @@ import { animateScroll as scroll } from "react-scroll";
 import NavLinks from "../components/NavLinks";
 import SideNav from "../components/SideNav";
 
-const Header = () => {
+export default function Header(): JSX.Element {
   const [scrolled, setScrolled] = useState(false);
   const [showSideNav, setShowSideNav] = useState(false);
 
-  const handleMenuButtonClick = () => setShowSideNav(true);
-  const handleLogoClick = () => scroll.scrollToTop();
+  function handleLogoClick(): void {
+    scroll.scrollToTop();
+  }
 
   window.addEventListener("scroll", () => {
     window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
@@ -19,9 +20,14 @@ const Header = () => {
   return (
     <header
       id="header"
-      className={`fixed top-0 left-0 w-full z-50 ${
-        !scrolled ? "text-neutral-50" : "bg-neutral-50 drop-shadow-md"
-      }`}
+      className={`
+        fixed 
+        top-0 
+        left-0 
+        w-full 
+        z-50 
+        ${!scrolled ? "text-neutral-50" : "bg-neutral-50 drop-shadow-md"}
+      `}
     >
       <nav className="container py-2 flex justify-between items-center">
         {/* top-left logo */}
@@ -36,7 +42,7 @@ const Header = () => {
         {/* menu/hamburger button */}
         <button
           type="button"
-          onClick={handleMenuButtonClick}
+          onClick={() => setShowSideNav(true)}
           className="md:hidden flex justify-center items-center"
         >
           <FaBars className="text-2xl" />
@@ -49,6 +55,4 @@ const Header = () => {
       </nav>
     </header>
   );
-};
-
-export default Header;
+}
