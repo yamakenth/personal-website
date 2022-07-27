@@ -1,11 +1,11 @@
 import React from "react";
 
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import About from "./containers/About";
+import Contact from "./containers/Contact";
+import Header from "./containers/Header";
+import Home from "./containers/Home";
+import Projects from "./containers/Projects";
+import Skills from "./containers/Skills";
 
 export default function App(): JSX.Element {
   return (

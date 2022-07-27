@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 
-import NavLinks from "./NavLinks";
-import SideNav from "./SideNav";
+import NavLinks from "../components/NavLinks";
+import SideNav from "../components/SideNav";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
