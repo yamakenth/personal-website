@@ -1,3 +1,4 @@
+// @ts-nocheck
 import icons from "../assets/img";
 
 // arrays to order skills

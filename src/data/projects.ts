@@ -1,3 +1,4 @@
+// @ts-nocheck
 import blogApiDemo from "../assets/img/projects/blogapi-screencapture.gif";
 import calculatorDemo from "../assets/img/projects/calculator-screencapture.gif";
 import ShoppingCartDemo from "../assets/img/projects/shoppingcart-screencapture.gif";

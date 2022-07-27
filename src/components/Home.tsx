@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link } from "react-scroll";
 import { FaExternalLinkAlt } from "react-icons/fa";
 

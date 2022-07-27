@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link } from "react-scroll";
 
 const section = ["home", "about", "skills", "projects", "contact"];

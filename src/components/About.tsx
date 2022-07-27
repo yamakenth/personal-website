@@ -1,4 +1,5 @@
-import { useRef } from "react";
+// @ts-nocheck
+import React, { useRef } from "react";
 import { FaCode } from "react-icons/fa";
 
 import { aboutText } from "../data/external-links";

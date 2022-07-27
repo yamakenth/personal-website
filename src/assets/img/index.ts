@@ -1,3 +1,4 @@
+// @ts-nocheck
 import bootstrap from "./icons/bootstrap.svg";
 import css from "./icons/css.svg";
 import express from "./icons/express.svg";
