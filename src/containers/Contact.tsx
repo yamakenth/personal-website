@@ -11,7 +11,7 @@ export default function Contact(): JSX.Element {
     <section id="contact" className="bg-neutral-100">
       <div className="container py-16 flex flex-col items-center justify-between gap-10">
         <h2 className="self-start">Contact</h2>
-        <SocialNavLinks />
+        <SocialNavLinks isMobile={false} />
         <footer>
           <p className="flex justify-start text-sm mt-5">
             {COPYRIGHT}

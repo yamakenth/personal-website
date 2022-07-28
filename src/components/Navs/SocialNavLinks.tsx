@@ -40,7 +40,19 @@ const NAV_LINKS = [
   },
 ];
 
-export default function SocialNavLinks(): JSX.Element {
+interface SocialNavLinksProps {
+  isMobile: boolean;
+}
+
+export default function SocialNavLinks({
+  isMobile,
+}: SocialNavLinksProps): JSX.Element {
+  return (
+    <>{isMobile ? <HorizonatalNavWithNoText /> : <VerticalNavWithText />}</>
+  );
+}
+
+function VerticalNavWithText(): JSX.Element {
   return (
     <ul className="flex flex-col items-center justify-between gap-4 text-xl">
       {NAV_LINKS.map((link) => (
@@ -73,6 +85,20 @@ export default function SocialNavLinks(): JSX.Element {
               {link.hoverText}
               <FaExternalLinkAlt />
             </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function HorizonatalNavWithNoText(): JSX.Element {
+  return (
+    <ul className="flex justify-between gap-5 pt-14">
+      {NAV_LINKS.map((link) => (
+        <li key={link.defaultText}>
+          <a href={link.href} target="_blank" rel="noreferrer">
+            {link.icon}
           </a>
         </li>
       ))}

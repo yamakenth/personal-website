@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  FaEnvelope,
-  FaFileAlt,
-  FaGithubSquare,
-  FaLinkedin,
-  FaTimes,
-} from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
-import { email, gitHub, linkedIn, resume } from "../../data/external-links";
 import NavLinks from "./NavLinks";
+import SocialNavLinks from "./SocialNavLinks";
 
 interface SideNavProps {
   showSideNav: boolean;
@@ -53,29 +47,7 @@ export default function SideNav({
         </button>
         {/* page nav links */}
         <NavLinks isMobile={true} />
-        {/* social navs */}
-        <ul className="flex justify-between gap-5 pt-14">
-          <li>
-            <a href={`mailto:${email}`}>
-              <FaEnvelope className="text-2xl" />
-            </a>
-          </li>
-          <li>
-            <a href={linkedIn} target="_blank" rel="noreferrer">
-              <FaLinkedin className="text-2xl" />
-            </a>
-          </li>
-          <li>
-            <a href={gitHub} target="_blank" rel="noreferrer">
-              <FaGithubSquare className="text-2xl" />
-            </a>
-          </li>
-          <li>
-            <a href={resume} target="_blank" rel="noreferrer">
-              <FaFileAlt className="text-2xl" />
-            </a>
-          </li>
-        </ul>
+        <SocialNavLinks isMobile={true} />
       </div>
 
       {/* overlay */}
