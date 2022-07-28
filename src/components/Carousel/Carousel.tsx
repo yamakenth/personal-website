@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 
-import projects from "../../data/projects";
 import CarouselControls from "./CarouselControls";
 import CarouselDemo from "./CarouselDemo";
 import CarouselDetails from "./CarouselDetails";
 import CarouselDotsNav from "./CarouselDotNav";
 
-export default function Carousel(): JSX.Element {
+export interface IProject {
+  name: string;
+  summary: string;
+  features: string;
+  technologies: string;
+  demoGif: any;
+  demoLink: string;
+  repoLink: string;
+}
+
+interface CarouselProps {
+  projects: IProject[];
+}
+
+export default function Carousel({ projects }: CarouselProps): JSX.Element {
   const [curSlide, setCurSlide] = useState(0);
 
   return (

@@ -2,7 +2,10 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-import { homeText, resume } from "../data/external-links";
+import { resume } from "../data/external-links";
+
+const DESCRIPTION: string =
+  "Hello! My name is Ken and I'm a self-taught full-stack web developer.";
 
 export default function Home(): JSX.Element {
   return (
@@ -45,7 +48,7 @@ export default function Home(): JSX.Element {
         >
           {/* intro text */}
           <h4 className="text-neutral-50 text-center w-72 xl:w-96">
-            {homeText}
+            {DESCRIPTION}
           </h4>
 
           {/* button navs */}

@@ -1,8 +1,14 @@
 import React, { MutableRefObject, useRef } from "react";
 import { FaCode } from "react-icons/fa";
 
-import { aboutText } from "../data/external-links";
 import { useOnScreen } from "../utilities";
+
+const DESCRIPTION: string = `I'm an incoming masters of computer science student at the University of 
+Pennsylvania for Fall 2022. I graduated from the University of Washington with a degree in 
+industrial engineering and worked as a business intelligence analyst at Shopee (largest e-commerce 
+platform in greater Southeast Asia). I decided to explore web development as I became interested in 
+learning how technologies we use everyday function under the hood. Besides coding, I enjoy going to 
+the gym, reading, following tech news, and watching Formula 1.`;
 
 export default function About(): JSX.Element {
   const ref = useRef() as MutableRefObject<HTMLElement>;
@@ -25,7 +31,7 @@ export default function About(): JSX.Element {
             ${isVisible ? "translate-x-0" : "-translate-x-[100vw]"}
           `}
         >
-          <p className="text-justify md:w-2/3">{aboutText}</p>
+          <p className="text-justify md:w-2/3">{DESCRIPTION}</p>
           <FaCode className="hidden md:block text-[10rem]" />
         </div>
       </div>

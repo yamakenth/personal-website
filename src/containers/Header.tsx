@@ -5,6 +5,8 @@ import { animateScroll as scroll } from "react-scroll";
 import NavLinks from "../components/Navs/NavLinks";
 import SideNav from "../components/Navs/SideNav";
 
+const NAME = "Ken Yamada";
+
 export default function Header(): JSX.Element {
   const [scrolled, setScrolled] = useState(false);
   const [showSideNav, setShowSideNav] = useState(false);
@@ -32,7 +34,7 @@ export default function Header(): JSX.Element {
       <nav className="container py-2 flex justify-between items-center">
         {/* top-left logo */}
         <button type="button" onClick={handleLogoClick}>
-          <h1 className="font-semibold tracking-widest">Ken Yamada</h1>
+          <h1 className="font-semibold tracking-widest">{NAME}</h1>
         </button>
 
         {/* mainnav */}
