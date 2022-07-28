@@ -27,11 +27,11 @@ export default function Carousel(): JSX.Element {
       gap-y-6 
       relative"
     >
-      <CarouselDemo demoSrc={projects[curSlide].demoSrc} />
+      <CarouselDemo demoGif={projects[curSlide].demoGif} />
       <CarouselDetails
         name={projects[curSlide].name}
         summary={projects[curSlide].summary}
-        features={projects[curSlide].summary}
+        features={projects[curSlide].features}
         technologies={projects[curSlide].technologies}
         demoLink={projects[curSlide].demoLink}
         repoLink={projects[curSlide].repoLink}

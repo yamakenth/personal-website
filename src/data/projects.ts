@@ -1,9 +1,15 @@
+import blogApiGif from "../assets/img/projects/blogapi-screencapture.gif";
+import calculatorGif from "../assets/img/projects/calculator-screencapture.gif";
+import shoppingCartGif from "../assets/img/projects/shoppingcart-screencapture.gif";
+import tnwHomepageCloneGif from "../assets/img/projects/tnwhomepageclone-screencapture.gif";
+import weatherAppGif from "../assets/img/projects/weatherapp-screencapture.gif";
+
 interface IProject {
   name: string;
   summary: string;
   features: string;
   technologies: string;
-  demoSrc: string;
+  demoGif: any;
   demoLink: string;
   repoLink: string;
 }
@@ -17,7 +23,7 @@ const blogApi: IProject = {
   login, create, read, edit, and delete blog posts as well as comments on the admin webpage.`,
   technologies: `HTML, CSS, Bootstrap, JavaScript, React.js, Node.js, Express.js, Passport.js, 
   MongoDB, Mongoose, Heroku`,
-  demoSrc: "../../assets/img/projects/blogapi-screencapture.gif",
+  demoGif: blogApiGif,
   demoLink: "https://yamakenth.github.io/blog-api-client/",
   repoLink: "https://github.com/yamakenth/blog-api-client",
 };
@@ -29,7 +35,7 @@ const calculator: IProject = {
   calculation from left to right disregarding PEMDAS order of operation. Accepts input via 
   on-screen button clicks (keyboard input not yet supported).`,
   technologies: "HTML, CSS, JavaScript",
-  demoSrc: "../assets/img/projects/calculator-screencapture.gif",
+  demoGif: calculatorGif,
   demoLink: "https://yamakenth.github.io/calculator/",
   repoLink: "https://github.com/yamakenth/calculator",
 };
@@ -40,7 +46,7 @@ const shoppingCart: IProject = {
   features: `Allows users to navigate between Home, Product, and Contact pages. Enables users to 
   add, remove, or edit number of products in cart. Shows number of items in cart in the header.`,
   technologies: "HTML, CSS, JavaScript, React.js",
-  demoSrc: "../assets/img/projects/shoppingcart-screencapture.gif",
+  demoGif: shoppingCartGif,
   demoLink: "https://yamakenth.github.io/shopping-cart/",
   repoLink: "https://github.com/yamakenth/shopping-cart",
 };
@@ -51,7 +57,7 @@ const tnwHomepageClone: IProject = {
   features: `Responsive design with 2 break points without the use of CSS framework. Use of 
   animation to provide user feedback.`,
   technologies: "HTML, CSS",
-  demoSrc: "../assets/img/projects/tnwhomepageclone-screencapture.gif",
+  demoGif: tnwHomepageCloneGif,
   demoLink: "https://yamakenth.github.io/tnw-homepage-clone/",
   repoLink: "https://github.com/yamakenth/tnw-homepage-clone",
 };
@@ -63,7 +69,7 @@ const weatherApp: IProject = {
   weather and daily forecasts for the next 7 days. Allows users to toggle between metric and 
   imperial units.`,
   technologies: "HTML, CSS, JavaScript, Webpack",
-  demoSrc: "../assets/img/projects/weatherapp-screencapture.gif",
+  demoGif: weatherAppGif,
   demoLink: "https://yamakenth.github.io/weather-app/",
   repoLink: "https://github.com/yamakenth/weather-app",
 };
