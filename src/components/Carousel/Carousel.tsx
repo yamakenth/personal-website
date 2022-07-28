@@ -21,6 +21,7 @@ interface CarouselProps {
 
 export default function Carousel({ projects }: CarouselProps): JSX.Element {
   const [curSlide, setCurSlide] = useState(0);
+  const curProject = projects[curSlide];
 
   return (
     <div
@@ -40,14 +41,14 @@ export default function Carousel({ projects }: CarouselProps): JSX.Element {
       gap-y-6 
       relative"
     >
-      <CarouselDemo demoGif={projects[curSlide].demoGif} />
+      <CarouselDemo demoGif={curProject.demoGif} />
       <CarouselDetails
-        name={projects[curSlide].name}
-        summary={projects[curSlide].summary}
-        features={projects[curSlide].features}
-        technologies={projects[curSlide].technologies}
-        demoLink={projects[curSlide].demoLink}
-        repoLink={projects[curSlide].repoLink}
+        name={curProject.name}
+        summary={curProject.summary}
+        features={curProject.features}
+        technologies={curProject.technologies}
+        demoLink={curProject.demoLink}
+        repoLink={curProject.repoLink}
       />
       <CarouselDotsNav
         curSlide={curSlide}
