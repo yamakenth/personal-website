@@ -45,11 +45,3 @@ body {
 .btn-secondary {
   @apply bg-sky-600 text-neutral-50 hover:bg-neutral-50 hover:text-neutral-900;
 }
-
-.contact-navitem {
-  @apply flex gap-2 items-center hover:underline transition-all duration-500;
-}
-
-.contact-navitem-span {
-  @apply flex gap-2 items-center;
-}
