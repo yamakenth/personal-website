@@ -2,7 +2,8 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 
 import SocialNavLinks from "../components/Navs/SocialNavLinks";
-import { sourceCode } from "../data/external-links";
+
+const SOURCE_CODE: string = "https://github.com/yamakenth/personal-website";
 
 export default function Contact(): JSX.Element {
   const curYear = new Date().getFullYear();
@@ -16,7 +17,7 @@ export default function Contact(): JSX.Element {
           <p className="flex justify-start text-sm mt-5">
             Copyright &copy; {curYear}&nbsp; yamakenth
             <a
-              href={sourceCode}
+              href={SOURCE_CODE}
               target="_blank"
               rel="noreferrer"
               className="flex gap-1 items-center ml-2"
