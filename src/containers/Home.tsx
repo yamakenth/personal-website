@@ -27,8 +27,7 @@ export default function Home(): JSX.Element {
           flex-col 
           items-center 
           justify-end 
-          sm:justify-center 
-          sm:-translate-x-[15%]"
+          sm:justify-center"
       >
         <div
           className="
@@ -44,7 +43,9 @@ export default function Home(): JSX.Element {
             rounded-2xl 
             border-neutral-50/50 
             p-2 
-            xl:p-8"
+            xl:p-8
+            sm:-translate-x-[20%]
+            lg:-translate-x-[40%]"
         >
           {/* intro text */}
           <h4 className="text-neutral-50 text-center w-72 xl:w-96">
