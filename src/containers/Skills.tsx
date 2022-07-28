@@ -4,6 +4,7 @@ import SkillsRow, { ISkill } from "../components/Skills/SkillsRow";
 
 const LANGUAGES: ISkill[] = [
   { name: "JavaScript", iconName: "JavaScript" },
+  { name: "TypeScript", iconName: "TypeScript" },
   { name: "HTML", iconName: "HTML" },
   { name: "CSS", iconName: "CSS" },
   { name: "Python", iconName: "Python" },
@@ -25,6 +26,7 @@ const FRAMEWORKS: ISkill[] = [
 ];
 
 const MISC: ISkill[] = [
+  { name: "GraphQL", iconName: "GraphQL" },
   { name: "Git", iconName: "Git" },
   { name: "GitHub", iconName: "GitHub" },
   { name: "npm", iconName: "NPM" },

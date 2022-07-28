@@ -4,6 +4,7 @@ import Express from "./Express";
 import Firebase from "./Firebase";
 import Git from "./Git";
 import GitHub from "./GitHub";
+import GraphQL from "./GraphQL";
 import HTML from "./HTML";
 import Heroku from "./Heroku";
 import Java from "./Java";
@@ -22,6 +23,7 @@ import R from "./R";
 import ReactJS from "./ReactJS";
 import Tableau from "./Tableau";
 import Tailwind from "./Tailwind";
+import TypeScript from "./TypeScript";
 import Webpack from "./Webpack";
 
 const icons = {
@@ -31,6 +33,7 @@ const icons = {
   Firebase,
   Git,
   GitHub,
+  GraphQL,
   HTML,
   Heroku,
   Java,
@@ -49,6 +52,7 @@ const icons = {
   ReactJS,
   Tableau,
   Tailwind,
+  TypeScript,
   Webpack,
 };
 
