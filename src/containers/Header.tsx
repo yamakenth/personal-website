@@ -31,30 +31,36 @@ export default function Header(): JSX.Element {
         ${!scrolled ? "text-neutral-50" : "bg-neutral-50 drop-shadow-md"}
       `}
     >
-      <nav className="container py-2 flex justify-between items-center">
+      <div className="container py-2 flex justify-between items-center">
         {/* top-left logo */}
-        <button type="button" onClick={handleLogoClick}>
-          <h1 className="font-semibold tracking-widest">{NAME}</h1>
-        </button>
-
-        {/* mainnav */}
-        <div className="hidden md:block">
-          <NavLinks isMobile={false} />
-        </div>
-        {/* menu/hamburger button */}
-        <button
-          type="button"
-          onClick={() => setShowSideNav(true)}
-          className="md:hidden flex justify-center items-center"
+        <h1
+          className="font-semibold tracking-widest cursor-pointer"
+          onClick={handleLogoClick}
         >
-          <FaBars className="text-2xl" />
-        </button>
+          {NAME}
+        </h1>
+
+        {/* top-right desktop nav/hamburger botton */}
+        <nav>
+          {/* desktop nav */}
+          <div className="hidden md:block">
+            <NavLinks isMobile={false} />
+          </div>
+          {/* hamburger button */}
+          <button
+            type="button"
+            onClick={() => setShowSideNav(true)}
+            className="md:hidden flex justify-center items-center"
+          >
+            <FaBars className="text-2xl" />
+          </button>
+        </nav>
 
         {/* sidenav */}
         <div className="md:hidden fixed top-0 right-0">
           <SideNav setShowSideNav={setShowSideNav} showSideNav={showSideNav} />
         </div>
-      </nav>
+      </div>
     </header>
   );
 }
