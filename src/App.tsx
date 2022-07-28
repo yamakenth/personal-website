@@ -2,6 +2,7 @@ import React from "react";
 
 import About from "./containers/About";
 import Contact from "./containers/Contact";
+import Footer from "./containers/Footer";
 import Header from "./containers/Header";
 import Home from "./containers/Home";
 import Projects from "./containers/Projects";
@@ -26,6 +27,7 @@ export default function App(): JSX.Element {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
