@@ -1,17 +1,16 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 
-import NavLinks from "./NavLinks";
-import SocialNavLinks from "./SocialNavLinks";
-
 interface SideNavProps {
   showSideNav: boolean;
   setShowSideNav: React.Dispatch<React.SetStateAction<boolean>>;
+  children: JSX.Element[];
 }
 
 export default function SideNav({
   showSideNav,
   setShowSideNav,
+  children,
 }: SideNavProps): JSX.Element {
   return (
     <>
@@ -46,8 +45,7 @@ export default function SideNav({
           <FaTimes className="text-2xl" />
         </button>
         {/* page nav links */}
-        <NavLinks isMobile={true} />
-        <SocialNavLinks isMobile={true} />
+        {children}
       </div>
 
       {/* overlay */}

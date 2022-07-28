@@ -4,6 +4,7 @@ import { animateScroll as scroll } from "react-scroll";
 
 import NavLinks from "../components/Navs/NavLinks";
 import SideNav from "../components/Navs/SideNav";
+import SocialNavLinks from "../components/Navs/SocialNavLinks";
 
 const NAME = "Ken Yamada";
 
@@ -58,7 +59,10 @@ export default function Header(): JSX.Element {
 
         {/* sidenav */}
         <div className="md:hidden fixed top-0 right-0">
-          <SideNav setShowSideNav={setShowSideNav} showSideNav={showSideNav} />
+          <SideNav setShowSideNav={setShowSideNav} showSideNav={showSideNav}>
+            <NavLinks isMobile={true} />
+            <SocialNavLinks isMobile={true} />
+          </SideNav>
         </div>
       </div>
     </header>
