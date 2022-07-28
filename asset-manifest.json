@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.0d38c609.css",
-    "main.js": "/personal-website/static/js/main.88584665.js",
+    "main.css": "/personal-website/static/css/main.82786482.css",
+    "main.js": "/personal-website/static/js/main.5800283e.js",
     "static/media/tnwhomepageclone-screencapture.gif": "/personal-website/static/media/tnwhomepageclone-screencapture.a40b35e650708297880c.gif",
     "static/media/weatherapp-screencapture.gif": "/personal-website/static/media/weatherapp-screencapture.94f369fc7cbacbfe61f3.gif",
     "static/media/shoppingcart-screencapture.gif": "/personal-website/static/media/shoppingcart-screencapture.2522cc169832441b121c.gif",
@@ -11,11 +11,11 @@
     "static/media/calculator-screencapture.gif": "/personal-website/static/media/calculator-screencapture.43212d555ddad63bed68.gif",
     "static/media/bg-sakura.jpeg": "/personal-website/static/media/bg-sakura.ab36de229626092682ba.jpeg",
     "index.html": "/personal-website/index.html",
-    "main.0d38c609.css.map": "/personal-website/static/css/main.0d38c609.css.map",
-    "main.88584665.js.map": "/personal-website/static/js/main.88584665.js.map"
+    "main.82786482.css.map": "/personal-website/static/css/main.82786482.css.map",
+    "main.5800283e.js.map": "/personal-website/static/js/main.5800283e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d38c609.css",
-    "static/js/main.88584665.js"
+    "static/css/main.82786482.css",
+    "static/js/main.5800283e.js"
   ]
 }
