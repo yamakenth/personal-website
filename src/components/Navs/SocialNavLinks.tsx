@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef } from "react";
+import React from "react";
 import {
   FaEnvelope,
   FaExternalLinkAlt,
@@ -9,7 +9,6 @@ import {
 
 import { email, gitHub, linkedIn, resume } from "../../data/external-links";
 import { useHover } from "../../utilities";
-import { useOnScreen } from "../../utilities";
 
 export default function SocialNavLinks(): JSX.Element {
   const [emailIsHovering, emailHoverProps] = useHover();
@@ -17,21 +16,9 @@ export default function SocialNavLinks(): JSX.Element {
   const [githubIsHovering, githubHoverProps] = useHover();
   const [resumeIsHovering, resumeHoverProps] = useHover();
 
-  const ref = useRef() as MutableRefObject<HTMLUListElement>;
-  const isVisible = useOnScreen(ref, "-100px");
-
   return (
-    <ul
-      ref={ref}
-      className="flex flex-col items-center justify-between gap-4 text-xl"
-    >
-      <li
-        className={`
-          ease-linear 
-          duration-500
-          ${isVisible ? "translate-x-0" : "translate-x-[100vw]"}
-        `}
-      >
+    <ul className="flex flex-col items-center justify-between gap-4 text-xl">
+      <li>
         <a
           href={`mailto:${email}`}
           className="contact-navitem hover:text-yellow-500"
@@ -48,11 +35,7 @@ export default function SocialNavLinks(): JSX.Element {
           )}
         </a>
       </li>
-      <li
-        className={`${
-          isVisible ? "translate-x-0" : "translate-x-[100vw]"
-        } ease-linear duration-500 delay-100`}
-      >
+      <li>
         <a
           href={linkedIn}
           target="_blank"
@@ -71,11 +54,7 @@ export default function SocialNavLinks(): JSX.Element {
           )}
         </a>
       </li>
-      <li
-        className={`${
-          isVisible ? "translate-x-0" : "translate-x-[100vw]"
-        } ease-linear duration-500 delay-200`}
-      >
+      <li>
         <a
           href={gitHub}
           target="_blank"
@@ -94,11 +73,7 @@ export default function SocialNavLinks(): JSX.Element {
           )}
         </a>
       </li>
-      <li
-        className={`${
-          isVisible ? "translate-x-0" : "translate-x-[100vw]"
-        } ease-linear duration-500 delay-300`}
-      >
+      <li>
         <a
           href={resume}
           target="_blank"

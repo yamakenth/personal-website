@@ -1,31 +1,4 @@
-import React, { useEffect, useState } from "react";
-
-// hook to determine when element is visible on view port
-export function useOnScreen(
-  ref: React.MutableRefObject<HTMLElement>,
-  rootMargin = "0px"
-): boolean {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting);
-      },
-      { rootMargin }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      observer.disconnect();
-    };
-  });
-
-  return isIntersecting;
-}
+import { useState } from "react";
 
 // hook for css hover
 interface IOnHoverProps {
