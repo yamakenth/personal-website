@@ -3,8 +3,8 @@ import React from "react";
 export default function Tableau(): JSX.Element {
   return (
     <svg
-      height="80"
-      width="80"
+      height="100%"
+      width="100%"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 60.3 59.5"
     >

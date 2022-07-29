@@ -8,7 +8,9 @@ export default function PassportJS(): JSX.Element {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      viewBox="0 0 500 500"
+      height="100%"
+      width="100%"
+      viewBox="63 63 374 374"
     >
       <g id="XMLID_1_">
         <rect id="XMLID_2_" x="67.5" y="67.5" width="365" height="365" />
